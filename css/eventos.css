@@ -1,0 +1,29 @@
+main{
+    background: goldenrod;
+    border: solid darkgoldenrod;
+    padding: 1.5em;
+}
+
+article{
+    background: black;
+    border-radius: 1em;
+    padding: 1em;
+    color: aqua;
+}
+
+h2{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+ul{
+    list-style-type: none;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+}
