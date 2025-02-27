@@ -312,5 +312,43 @@ class CreadorDePersonajes{
 
 
 
+    toJSONString(){
+        var string = "{"
+        string+="\"puntos\":"+this.puntos;+",";
+        string+=",\"seleccionados\":[";
+        for(var i =0; i<this.selected.length; i++){
+            if(!i==this.selected.length-1)
+                string+="\""+this.selected[i]+"\",";
+            else    
+                string+="\""+this.selected[i]+"\"";
+        }
+        return string+"]}"
+    }
+     descargar() {
+        var textToSave = this.toJSONString();
 
+        var hiddenElement = document.createElement('a');
+        hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
+        hiddenElement.target = '_blank';
+        hiddenElement.download = 'myFile.txt';
+        hiddenElement.click();
+      }
+
+      readInputFile(files){
+        var archivo = files[0];
+        if(archivo.type.match("text.*")){
+            var lector = new FileReader();
+            lector.onload = function(evento){
+                this.partes = new Array();
+                var texto = lector.result;
+                var json = JSON.parse(texto);
+                this.puntos = json.puntos;
+                this.selected = json.seleccionados;
+                
+                this.guardarEnBaseDeDatos();
+                this.updateVista();
+            }.bind(this)
+            lector.readAsText(archivo);
+        }
+    }
 }

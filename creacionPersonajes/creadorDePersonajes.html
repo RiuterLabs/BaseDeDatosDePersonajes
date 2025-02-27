@@ -17,12 +17,14 @@
        
         <main>
             <h2>Creador de personajes</h2>
+            <input type="button" onclick="CreadorP.descargar()" value="Descargar"/>
+            <label><input type="file" onchange="CreadorP.readInputFile(this.files);">Elija un archivo a importar</label>
             <section class="puntos">
                 <h3>Puntos</h3>
                 <p id="puntosActuales">0</p>
             </section>
             <section id="seccionesBotones">
-               
+            
             </section>
             <script>
                 var CreadorP = new CreadorDePersonajes(30);
