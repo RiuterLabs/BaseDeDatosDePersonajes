@@ -5,6 +5,8 @@ class CreadorDePersonajes{
         this.desplegadas=[];
         this.puntos=puntosInicio;
         this.cargarArchivo();
+        this.initData();
+        
     }
 
     crearBotones() {
@@ -101,6 +103,7 @@ class CreadorDePersonajes{
         }
        
         this.updateVista();
+        this.guardarEnBaseDeDatos();
 
     }
 
@@ -172,4 +175,142 @@ class CreadorDePersonajes{
                 this.updateVista();
             })
     }
+
+
+    guardarEnBaseDeDatos(){
+        this.fetch();
+    }
+
+    fetch(){
+        var request = window.indexedDB.open("Personaje",2);
+
+        request.onerror = function(){
+            console.error("Error", request.error);
+        }
+
+        request.onsuccess = function(event){
+            var db = event.target.result;
+           
+            var transaction = db.transaction(["personaje"],"readwrite");
+
+            var partes = transaction.objectStore("personaje");
+            var cosasAGuardar = this.toJSON();
+            var request2 = partes.add(cosasAGuardar);
+
+            request2.onsuccess = function(){
+                this.updateVista();
+            }.bind(this);
+            request2.onerror = function(){
+                console.log("Error", request2.error);
+            }.bind(this);
+        }.bind(this);
+
+    }
+
+    toJSON(){
+        return {
+            "puntos":this.puntos,
+            "seleccionados":this.selected
+        }
+    }
+
+    initData(){
+        var request = window.indexedDB.open("Personaje",2);
+
+        request.onerror = function(){
+            console.error("Error", request.error);
+        }
+        request.onsuccess = function(event){
+            var db = event.target.result;
+            var transaction = db.transaction(["personaje"],"readwrite");
+
+            var partes = transaction.objectStore("personaje");
+            partes.getAll().onsuccess = function(event){
+                var result = event.target.result;
+                var cantidad = result.length;
+                if(cantidad>=1){
+                    var datos = result.slice(-1)[0];
+                    this.puntos = datos.puntos;
+                    this.selected = datos.seleccionados;
+                    if(this.selected == undefined)
+                        this.selected = [];
+                    this.updateVista();
+                   
+                }
+                
+            }.bind(this)
+            
+        }.bind(this);
+
+        request.onupgradeneeded = function(event){
+            var db = event.target.result;
+            if(!db.objectStoreNames.contains("personaje")){
+                db.createObjectStore("personaje", {autoIncrement:true});
+            }
+            var transaction = event.target.transaction;
+
+            var partes = transaction.objectStore("personaje");
+            var request2 = partes.add(this.partesSeleccionadas);
+
+            request2.onsuccess = function(){
+                partes.getAll().onsuccess = (event)=>{
+                    var result = event.target.result;
+                }
+            }.bind(this);
+            request2.onerror = function(){
+                console.log("Error", request2.error);
+            }.bind(this);
+        }.bind(this);
+
+    }
+
+    resetDatabase(){
+        var request = window.indexedDB.open("Personaje");
+
+        request.onerror = function(){
+            console.error("Error", request.error);
+        }
+
+        request.onsuccess = function(){
+            this.resetDatabase();
+            var db = request.result;
+            var transaction = db.transaction("personaje","readwrite");
+
+            var partes = transaction.objectStore("personaje");
+            var comprobar = partes.get("latest");
+            comprobar.onsuccess = function(){
+                var request2 = partes.delete("latest");
+
+                request2.onsuccess = function(){
+                }.bind(this);
+                request2.error = function(){
+                    console.log("Error");
+                }.bind(this);
+            }.bind(this);
+            
+        }.bind(this);
+
+    }
+    imprimirCoche(datos){
+        var request = window.indexedDB.open("Personaje");
+
+        request.onerror = function(){
+            console.error("Error", request.error);
+        }
+
+        request.onsuccess = function(event){
+            var db = event.target.result;
+            var transaction = db.transaction(["personaje"],"readwrite");
+
+            var partes = transaction.objectStore("personaje");
+            partes.getAll().onsuccess = (event)=>{
+                var result = event.target.result;
+            }
+            
+        }.bind(this);
+    }
+
+
+
+
 }
