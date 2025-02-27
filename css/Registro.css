@@ -5,3 +5,70 @@
 .demasiadoCara{
     background-color: brown;
 }
+.noTienesLaPrevia{
+    display: none;
+}
+
+button{
+    width: 100%;
+    border-radius: 2em;
+    margin-top:1em;
+}
+
+div div{
+    display: flex;
+}
+
+h2{
+    text-align: center;
+}
+
+div div section{
+    background-color: black;
+    width: 30%;
+    height: auto;
+    border-radius: 3em;
+    margin: 1em;
+    padding: 2em;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    border-radius: 1em;
+    border: solid 1em darkgoldenrod;
+}
+
+div div section h4{
+    align-self: center;
+    text-align: center;
+    background-color: black;
+    border-radius: 1em;
+}
+
+div div section p{
+    align-self: center;
+    text-align: center;
+}
+
+.puntos{
+    display: flex;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: black;
+    position: relative;
+    border-radius: 1em;
+    border: solid 1em darkgoldenrod;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 850px){
+    div div{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    div div section{
+        width: 100%;
+        height: auto;
+    }
+}

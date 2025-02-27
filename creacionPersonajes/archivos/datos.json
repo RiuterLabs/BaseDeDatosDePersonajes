@@ -10,7 +10,8 @@
             {
                 "id":"Id2",
                 "coste":25,
-                "desc":"Seleccionable2"
+                "desc":"Seleccionable2",
+                "requisitos":["Id1"]
             }
         ]
         

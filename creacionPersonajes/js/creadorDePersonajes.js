@@ -131,9 +131,27 @@ class CreadorDePersonajes{
                 if(!this.selected.includes(valor["id"])){
                     tarjeta.removeClass("yaLaTienes");
                 }
+                var requisitos = valor["requisitos"];
+                if(!this.checkRequisitos(requisitos)){
+                    tarjeta.addClass("noTienesLaPrevia");
+                }else{
+                    tarjeta.removeClass("noTienesLaPrevia");
+                }
             }
            
         }
+    }
+
+    checkRequisitos(requisitos){
+        if(requisitos == null || requisitos ==undefined)
+            return true;
+
+        for(var i =0; i<requisitos.length; i++){
+            var requisito = requisitos[i];
+            if(!this.selected.includes(requisito))
+                return false;
+        }
+        return true;
     }
 
     updateYaLasTienes(){
