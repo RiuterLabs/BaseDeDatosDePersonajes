@@ -8,6 +8,9 @@
 .noTienesLaPrevia{
     display: none;
 }
+.sinDesplegar{
+    display: none;
+}
 
 button{
     width: 100%;

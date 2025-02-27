@@ -21,8 +21,10 @@ class CreadorDePersonajes{
             var seccionBoton = document.createElement("div");
             seccionBoton.id = element["nombreCat"]
             var boton = this.crearBoton(element);
+            
             seccionBoton.append(boton);
             seccionBotones.append(seccionBoton);
+            this.crearTarjetas2(element);
         }
        
     }
@@ -30,38 +32,42 @@ class CreadorDePersonajes{
     crearBoton(infoBoton){
         var boton = document.createElement("button");
         boton.textContent = infoBoton["nombreCat"];
-        boton.addEventListener("click",this.crearTarjetas.bind(this,infoBoton));
+        boton.addEventListener("click",this.desplegar.bind(this,infoBoton.nombreCat));
         return boton;
     }
 
-    crearTarjetas(info){
+    desplegar(categoria){
+        if(this.desplegadas.includes(categoria)){
+            this.desplegadas = this.desplegadas.filter((element)=>element!=categoria);
+        }else{
+            this.desplegadas.push(categoria);
+        }
+        this.guardarEnBaseDeDatos();
+        this.updateVista();
+    }
+
+
+    crearTarjetas2(info){
         var seccionBotones = $("#"+info["nombreCat"]);
         var seccionTarjetas = document.getElementById("seccionTarjetas"+info["nombreCat"]);
         
-        if(this.desplegadas.includes(info["nombreCat"])){
-            var nuevas = this.desplegadas.filter((element)=>element!==info["nombreCat"])
-            this.desplegadas =nuevas;
-            seccionTarjetas.innerHTML = "";
+        if(seccionTarjetas==undefined || seccionTarjetas==null){
+            seccionTarjetas = document.createElement("div");
+            seccionTarjetas.id="seccionTarjetas"+info["nombreCat"];
+            seccionBotones.append(seccionTarjetas);
         }else{
-            if(seccionTarjetas==undefined || seccionTarjetas==null){
-                seccionTarjetas = document.createElement("div");
-                seccionTarjetas.id="seccionTarjetas"+info["nombreCat"];
-                seccionBotones.append(seccionTarjetas);
-            }else{
-                seccionTarjetas.innerHTML ="";
-            }
-            var tarjetas = info["tarjetas"];
-            for(var i =0; i<tarjetas.length; i++){
-                var infoTar = tarjetas[i];
-                var tarjeta = this.crearTarjeta(infoTar);
-                seccionTarjetas.append(tarjeta);
-            }
-            this.desplegadas.push(info["nombreCat"]);
+            seccionTarjetas.innerHTML ="";
+        }
+        var tarjetas = info["tarjetas"];
+        for(var i =0; i<tarjetas.length; i++){
+            var infoTar = tarjetas[i];
+            var tarjeta = this.crearTarjeta(infoTar);
+            seccionTarjetas.append(tarjeta);
         }
         
         this.updateVista();
-
     }
+
 
     crearTarjeta(info){
         var tarjeta = document.createElement("section");
@@ -109,8 +115,25 @@ class CreadorDePersonajes{
 
     updateVista(){
         this.updatePuntos();
+        this.updateDesplegadas();
         this.updateTarjetas();
         this.updateYaLasTienes();
+        
+    }
+
+    updateDesplegadas(){
+        for(var i =0; i<this.datos.length; i++){
+            var categoria = this.datos[i].nombreCat;
+            if(this.desplegadas.includes(categoria)){
+                var seccionTarjetas = $("#seccionTarjetas"+categoria);
+                seccionTarjetas.removeClass("sinDesplegar");
+            }else{
+                var seccionTarjetas = $("#seccionTarjetas"+categoria);
+                seccionTarjetas.addClass("sinDesplegar");
+            }
+                
+
+        }
     }
 
     updatePuntos(){
@@ -210,7 +233,8 @@ class CreadorDePersonajes{
     toJSON(){
         return {
             "puntos":this.puntos,
-            "seleccionados":this.selected
+            "seleccionados":this.selected,
+            "desplegadas":this.desplegadas
         }
     }
 
@@ -230,11 +254,18 @@ class CreadorDePersonajes{
                 var cantidad = result.length;
                 if(cantidad>=1){
                     var datos = result.slice(-1)[0];
-                    this.puntos = datos.puntos;
+                    if(datos!=undefined){
+                        this.puntos = datos.puntos;
                     this.selected = datos.seleccionados;
                     if(this.selected == undefined)
                         this.selected = [];
+                    this.desplegadas = datos.desplegadas;
+                    if(this.desplegadas==undefined)
+                        this.desplegadas=[];
+
                     this.updateVista();
+                    }
+                    
                    
                 }
                 
@@ -313,7 +344,8 @@ class CreadorDePersonajes{
 
 
     toJSONString(){
-        var string = "{"
+        var string = JSON.stringify(this.toJSON());
+        /*var string = "{"
         string+="\"puntos\":"+this.puntos;+",";
         string+=",\"seleccionados\":[";
         for(var i =0; i<this.selected.length; i++){
@@ -321,8 +353,8 @@ class CreadorDePersonajes{
                 string+="\""+this.selected[i]+"\",";
             else    
                 string+="\""+this.selected[i]+"\"";
-        }
-        return string+"]}"
+        }*/
+        return string;
     }
      descargar() {
         var textToSave = this.toJSONString();
@@ -342,13 +374,18 @@ class CreadorDePersonajes{
                 this.partes = new Array();
                 var texto = lector.result;
                 var json = JSON.parse(texto);
-                this.puntos = json.puntos;
-                this.selected = json.seleccionados;
-                
+                if(json.puntos!=undefined)
+                    this.puntos = json.puntos;
+                if(json.selected!=undefined)
+                    this.selected = json.seleccionados;
+                if(json.desplegadas!=undefined)
+                    this.desplegadas = json.desplegadas;
                 this.guardarEnBaseDeDatos();
                 this.updateVista();
             }.bind(this)
             lector.readAsText(archivo);
         }
     }
+
+    
 }
