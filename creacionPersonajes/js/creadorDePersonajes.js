@@ -71,7 +71,7 @@ class CreadorDePersonajes{
         var puntos = document.createElement("p");
         puntos.textContent = info["coste"];
         var img = document.createElement("img");
-        $(img).attr("src","../../multimedia/imagenes/creador/"+info["id"]+".jpg");
+        $(img).attr("src","../multimedia/imagenes/creador/"+info["id"]+".jpg");
         $(img).attr("alt",info["desc"]);
         var desc = document.createElement("p");
         desc.textContent = info["desc"];
