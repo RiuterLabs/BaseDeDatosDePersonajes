@@ -1,0 +1,39 @@
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script>
+            $("head").load("../fragments/cabeceras/headRegistro.html");
+        </script>
+        <script src="/creacionPersonajes/js/creadorDePersonajes.js"></script>
+    </head>
+        
+
+    <body>
+        <header>
+            <script>
+                $("header").load("../fragments/headers/navSegundaCapa.html");
+            </script>
+        </header>
+       
+        <main>
+            <h2>Creador de personajes</h2>
+            <section>
+                <h3>Puntos</h3>
+                <p id="puntosActuales">0</p>
+            </section>
+            <section id="seccionesBotones">
+               
+            </section>
+            <script>
+                var CreadorP = new CreadorDePersonajes(30);
+            </script>
+        </main>
+
+        <footer>
+            <script>
+                $("footer").load("../fragments/footer.html");
+            </script>
+        </footer>
+        
+    </body>
+</html>
