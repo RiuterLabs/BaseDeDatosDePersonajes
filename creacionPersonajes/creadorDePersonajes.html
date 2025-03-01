@@ -17,8 +17,18 @@
        
         <main>
             <h2>Creador de personajes</h2>
-            <input type="button" onclick="CreadorP.descargar()" value="Descargar"/>
-            <label><input type="file" onchange="CreadorP.readInputFile(this.files);">Elija un archivo a importar</label>
+
+            <section class="puntos">
+                <h3>Cargar y descargar</h3>
+                <input type="button" onclick="CreadorP.descargar()" value="Descargar"/>
+                <label><input type="file" onchange="CreadorP.readInputFile(this.files);">Elija un archivo a importar</label>
+            </section>
+            
+            <section class="puntos">
+                <h3>Nombre</h3>
+                <label><input type="text" id="textoNombre" onchange="CreadorP.cambiarNombre()"/></label>
+            </section>
+
             <section class="puntos">
                 <h3>Puntos</h3>
                 <p id="puntosActuales">0</p>

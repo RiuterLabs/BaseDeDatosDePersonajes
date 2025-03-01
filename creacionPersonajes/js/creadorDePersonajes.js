@@ -1,6 +1,7 @@
 class CreadorDePersonajes{
     constructor(puntosInicio){
         this.datos=[];
+        this.name="";
         this.selected=[];
         this.desplegadas=[];
         this.puntos=puntosInicio;
@@ -114,12 +115,20 @@ class CreadorDePersonajes{
     }
 
     updateVista(){
+        this.updateNombre();
         this.updatePuntos();
         this.updateDesplegadas();
         this.updateSeccionesDesbloqueadas();
         this.updateTarjetas();
         this.updateYaLasTienes();
         
+    }
+
+    updateNombre(){
+        var nombreTexto = $("#textoNombre");
+        if(this.name==undefined || this.name==null)
+            this.name = "";
+        nombreTexto.val(this.name);
     }
 
     updateSeccionesDesbloqueadas(){
@@ -267,7 +276,8 @@ class CreadorDePersonajes{
         return {
             "puntos":this.puntos,
             "seleccionados":this.selected,
-            "desplegadas":this.desplegadas
+            "desplegadas":this.desplegadas,
+            "nombre": this.name
         }
     }
 
@@ -295,7 +305,9 @@ class CreadorDePersonajes{
                     this.desplegadas = datos.desplegadas;
                     if(this.desplegadas==undefined)
                         this.desplegadas=[];
-
+                    this.name = datos.nombre;
+                    if(this.name == undefined)
+                        this.name = "";
                     this.updateVista();
                     }
                     
@@ -405,6 +417,8 @@ class CreadorDePersonajes{
                     this.selected = json.seleccionados;
                 if(json.desplegadas!=undefined)
                     this.desplegadas = json.desplegadas;
+                if(json.nombre!=undefined)
+                    this.name = json.nombre;
                 this.guardarEnBaseDeDatos();
                 this.updateVista();
             }.bind(this)
@@ -412,5 +426,10 @@ class CreadorDePersonajes{
         }
     }
 
+    cambiarNombre(){
+        var nombreTexto = $("#textoNombre");
+        this.name = nombreTexto.val();
+        this.guardarEnBaseDeDatos();
+    }
     
 }
