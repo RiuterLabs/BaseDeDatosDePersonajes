@@ -4,7 +4,7 @@
         "tarjetas":[
             {
                 "id":"Id1",
-                "coste":25,
+                "coste":5,
                 "desc":"Seleccionable1"
             },
             {
@@ -28,6 +28,25 @@
                 "coste":25,
                 "desc":"Seleccionable2"
             }
+        ]
+        
+    },{
+        "nombreCat":"Cat3",
+        "tarjetas":[
+            {
+                "id":"Id5",
+                "coste":25,
+                "desc":"Seleccionable1"
+            },
+            {
+                "id":"Id6",
+                "coste":25,
+                "desc":"Seleccionable2"
+            }
+        ],
+        "requisitos":[
+            "Id4",
+            "Id1"
         ]
         
     }

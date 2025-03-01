@@ -116,9 +116,42 @@ class CreadorDePersonajes{
     updateVista(){
         this.updatePuntos();
         this.updateDesplegadas();
+        this.updateSeccionesDesbloqueadas();
         this.updateTarjetas();
         this.updateYaLasTienes();
         
+    }
+
+    updateSeccionesDesbloqueadas(){
+        var data = this.datos;
+        for(var i =0; i<data.length; i++){
+            var categoria = data[i];
+            var boton = $("#"+categoria.nombreCat);
+            var seccion = $("#seccionTarjetas"+categoria.nombreCat);
+          
+            if(!this.checkRequisitosCategorias(categoria)){
+                boton.addClass("sinDesplegar");
+                seccion.addClass("sinDesplegar");
+            }else{
+                boton.removeClass("sinDesplegar");
+                if(this.desplegadas.includes(categoria.nombreCat))
+                    seccion.removeClass("sinDesplegar");
+            }
+          
+          }
+    }
+
+    checkRequisitosCategorias(categoria){
+        var requisitos = categoria.requisitos;
+        if(requisitos == null || requisitos ==undefined)
+            return true;
+
+        for(var i =0; i<requisitos.length; i++){
+            var requisito = requisitos[i];
+            if(!this.selected.includes(requisito))
+                return false;
+        }
+        return true;
     }
 
     updateDesplegadas(){
@@ -345,15 +378,7 @@ class CreadorDePersonajes{
 
     toJSONString(){
         var string = JSON.stringify(this.toJSON());
-        /*var string = "{"
-        string+="\"puntos\":"+this.puntos;+",";
-        string+=",\"seleccionados\":[";
-        for(var i =0; i<this.selected.length; i++){
-            if(!i==this.selected.length-1)
-                string+="\""+this.selected[i]+"\",";
-            else    
-                string+="\""+this.selected[i]+"\"";
-        }*/
+       
         return string;
     }
      descargar() {
@@ -376,7 +401,7 @@ class CreadorDePersonajes{
                 var json = JSON.parse(texto);
                 if(json.puntos!=undefined)
                     this.puntos = json.puntos;
-                if(json.selected!=undefined)
+                if(json.seleccionados!=undefined)
                     this.selected = json.seleccionados;
                 if(json.desplegadas!=undefined)
                     this.desplegadas = json.desplegadas;
