@@ -46,7 +46,7 @@
                 "id":"Humano",
                 "titulo":"Humano",
                 "coste":-10,
-                "desc":"Eres un humano",
+                "desc":"Eres un humano. Objetivamente, la peor decisión, pero a cambio tienes más puntos para gastar en otras secciones.",
                 "incompatibilidades":[
                     "Plasmoide",
                     "No-Carbonoide",
@@ -57,7 +57,7 @@
                 "id":"Plasmoide",
                 "titulo":"Plasmoide",
                 "coste":0,
-                "desc":"Eres un Plasmoide",
+                "desc":"Eres un Plasmoide. Tu especie tiene el esqueleto segmentado, y por complejos sistemas físicos, puedes cambiar tu forma y estructura corporal general",
                 "incompatibilidades":[
                     "Humano"
                 ]
@@ -66,7 +66,7 @@
                 "id":"Transmutado",
                 "titulo":"Transmutado",
                 "coste":0,
-                "desc":"Eres un Transmutado",
+                "desc":"Eres un Transmutado. No tienes estructura, eres un montón de tu material que puede tomar diversas formas.",
                 "incompatibilidades":[
                     "Humano"
                 ]
@@ -75,7 +75,7 @@
                 "id":"No-Carbonoide",
                 "titulo":"No Carbonoide",
                 "coste":0,
-                "desc":"Eres un No Carbonoide",
+                "desc":"Eres un No Carbonoide. Tienes estructura interna similar en muchos casos a la plasmoide, pero adaptada al material del que estás hecho, aprovechando sus capacidades.",
                 "incompatibilidades":[
                     "Humano"
                 ]
@@ -91,7 +91,7 @@
                 "id":"PT1",
                 "titulo":"Plasmoide Tipo 1",
                 "coste":0,
-                "desc":"Conocidos por su cuerpo elástico y maleable a temperatura ambiente",
+                "desc":"Conocidos por su cuerpo elástico y maleable a temperatura ambiente, son la elección más \"sólida\" de las tres.",
                 "requisitos":[
                     "Plasmoide"
                 ]
@@ -100,7 +100,7 @@
                 "id":"PT2",
                 "titulo":"Plasmoide Tipo 2",
                 "coste":0,
-                "desc":"Conocidos por su cuerpo viscoso y gelatinoso a temperatura ambiente",
+                "desc":"Conocidos por su cuerpo viscoso y gelatinoso a temperatura ambiente, quizás manches un poco por donde pases.",
                 "requisitos":[
                     "Plasmoide"
                 ]
@@ -109,7 +109,7 @@
                 "id":"PT3",
                 "titulo":"Plasmoide Tipo 3",
                 "coste":0,
-                "desc":"Conocidos por su cuerpo líquido y fluido a temperatura ambiente",
+                "desc":"Conocidos por su cuerpo líquido y fluido a temperatura ambiente, tendrás que tener un poco de cuidado para no irte por los desagües.",
                 "requisitos":[
                     "Plasmoide"
                 ]
@@ -118,7 +118,7 @@
                 "id":"PT0",
                 "titulo":"Plasmoide Tipo 0",
                 "coste":35,
-                "desc":"Variante rarísima y capaz de modificar su estado físico a voluntad",
+                "desc":"Variante rarísima y capaz de modificar su estado físico a voluntad.",
                 "requisitos":[
                     "Plasmoide"
                 ]
@@ -127,7 +127,7 @@
                 "id":"TT1",
                 "titulo":"Transmutado Tipo 1",
                 "coste":0,
-                "desc":"Transmutados de elementos puros, compuestos sencillos y metales",
+                "desc":"Transmutados de elementos puros, compuestos sencillos y metales, desde oro hasta ciertos explosivos.",
                 "requisitos":[
                     "Transmutado"
                 ]
@@ -136,7 +136,7 @@
                 "id":"TT2",
                 "titulo":"Transmutado Tipo 2",
                 "coste":0,
-                "desc":"Transmutados de compuestos orgánicos",
+                "desc":"Transmutados de compuestos orgánicos, por si alguna vez has querido ser una proteína o de alcoholes.",
                 "requisitos":[
                     "Transmutado"
                 ]
@@ -145,7 +145,7 @@
                 "id":"TT3",
                 "titulo":"Transmutado Tipo 3",
                 "coste":0,
-                "desc":"Transmutados de comida",
+                "desc":"Transmutados de comida. Casi la mayor variedad, ¡tienes de todo!",
                 "requisitos":[
                     "Transmutado"
                 ]
@@ -154,7 +154,7 @@
                 "id":"NCT1",
                 "titulo":"No Carbonoide Tipo 1",
                 "coste":0,
-                "desc":"No carbonoides de elementos puros, compuestos sencillos y metales",
+                "desc":"No carbonoides de elementos puros, compuestos sencillos y metales. Ahora ser de plata no te molestará.",
                 "requisitos":[
                     "No-Carbonoide"
                 ]
@@ -163,7 +163,7 @@
                 "id":"NCT2",
                 "titulo":"No Carbonoide Tipo 2",
                 "coste":0,
-                "desc":"No carbonoides de compuestos orgánicos",
+                "desc":"No carbonoides de compuestos orgánicos. Eres una fábrica andante de tu material, y quizás de algunos otros",
                 "requisitos":[
                     "No-Carbonoide"
                 ]
@@ -172,7 +172,7 @@
                 "id":"NCT3",
                 "titulo":"No Carbonoide Tipo 3",
                 "coste":0,
-                "desc":"No carbonoides de comida",
+                "desc":"No carbonoides de comida. ¡No puedes tener mono de tu comida favorita si estás hecho de ella!",
                 "requisitos":[
                     "No-Carbonoide"
                 ]
@@ -199,7 +199,7 @@
             }
         ],
         "requisitos":[
-            "No-Carbonoide|Transmutado"
+            "TT1|NCT1"
         ]
         
     }
