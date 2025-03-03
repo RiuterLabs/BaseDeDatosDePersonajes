@@ -20,6 +20,8 @@ button{
 
 div div{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 div div img{

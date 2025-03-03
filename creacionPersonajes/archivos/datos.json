@@ -6,20 +6,32 @@
                 "id":"Masculino",
                 "titulo":"Masculino",
                 "coste":0,
-                "desc":"Eres un ser masculino"
+                "desc":"Eres un ser masculino",
+                "incompatibilidades":[
+                    "Femenino",
+                    "No-Binarie"
+                ]
                 
             },
             {
                 "id":"Femenino",
                 "titulo":"Femenino",
                 "coste":0,
-                "desc":"Eres un ser femenino"
+                "desc":"Eres un ser femenino",
+                "incompatibilidades":[
+                    "Masculino",
+                    "No-Binarie"
+                ]
             },
             {
                 "id":"No-Binarie",
                 "titulo":"No Binarie",
                 "coste":0,
-                "desc":"Eres un ser no binarie"
+                "desc":"Eres un ser no binarie",
+                "incompatibilidades":[
+                    "Femenino",
+                    "Masculino"
+                ]
             }
         ]
         
@@ -30,25 +42,39 @@
                 "id":"Humano",
                 "titulo":"Humano",
                 "coste":-10,
-                "desc":"Eres un humano"
+                "desc":"Eres un humano",
+                "incompatibilidades":[
+                    "Plasmoide",
+                    "No-Carbonoide",
+                    "Transmutado"
+                ]
             },
             {
                 "id":"Plasmoide",
                 "titulo":"Plasmoide",
                 "coste":0,
-                "desc":"Eres un Plasmoide"
+                "desc":"Eres un Plasmoide",
+                "incompatibilidades":[
+                    "Humano"
+                ]
             },
             {
                 "id":"Transmutado",
                 "titulo":"Transmutado",
                 "coste":0,
-                "desc":"Eres un Transmutado"
+                "desc":"Eres un Transmutado",
+                "incompatibilidades":[
+                    "Humano"
+                ]
             },
             {
                 "id":"No-Carbonoide",
                 "titulo":"No Carbonoide",
                 "coste":0,
-                "desc":"Eres un No Carbonoide"
+                "desc":"Eres un No Carbonoide",
+                "incompatibilidades":[
+                    "Humano"
+                ]
             }
         ]
         

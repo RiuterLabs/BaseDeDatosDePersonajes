@@ -93,6 +93,15 @@ class CreadorDePersonajes{
     }
 
     addTf(info){
+        this.addTarjeta(info);
+        if(info.incompatibilidades != undefined || info.incompatibilidades !=null)
+            this.computeRequisites(info);
+        this.updateVista();
+        this.guardarEnBaseDeDatos();
+
+    }
+
+    addTarjeta(info){
         var id = info["id"];
         var coste = info["coste"];
 
@@ -108,10 +117,54 @@ class CreadorDePersonajes{
             }
     
         }
-       
-        this.updateVista();
-        this.guardarEnBaseDeDatos();
+    }
+    computeRequisites(info){
+        this.comprobarIncompatibilidadesCategorias(info);
+        this.comprobarIncompatibilidadesGeneral();
+    }
 
+    comprobarIncompatibilidadesCategorias(info){
+        var incompatibilidades = info.incompatibilidades;
+        for(var i =0; i<incompatibilidades.length; i++){
+            var tarjeta = this.getTarjetaByID(incompatibilidades[i]);
+            if(this.selected.includes(tarjeta.id))
+                this.addTarjeta(tarjeta);
+        }
+    }
+
+    getTarjetaByID(id){
+        for(var i =0; i<this.datos.length; i++ ){
+            var cat = this.datos[i];
+            var valores = cat["tarjetas"];
+            for(var j=0; j<valores.length; j++)
+            {
+                var valor = valores[j];
+                if(valor.id == id)
+                    return valor;
+            }
+           
+        }
+        return undefined;
+    }
+
+    comprobarIncompatibilidadesGeneral(){
+        for(var i =0; i<this.datos.length; i++ ){
+            var cat = this.datos[i];
+            var valores = cat["tarjetas"];
+            for(var j=0; j<valores.length; j++)
+            {
+                var valor = valores[j];
+                var tarjeta = $("#"+valor["id"]);
+                
+                var requisitos = valor["requisitos"];
+                if(!this.checkRequisitos(requisitos)){
+                    if(this.selected.includes(valor.id)){
+                        this.addTarjeta(valor);
+                    }
+                }
+            }
+           
+        }
     }
 
     updateVista(){
