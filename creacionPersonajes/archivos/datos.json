@@ -1,6 +1,8 @@
 [
     {
         "nombreCat":"Género",
+        "tituloCat":"Género",
+
         "tarjetas":[
             {
                 "id":"Masculino",
@@ -37,6 +39,8 @@
         
     },{
         "nombreCat":"Especie",
+        "tituloCat":"Especie",
+
         "tarjetas":[
             {
                 "id":"Humano",
@@ -80,6 +84,8 @@
         
     },{
         "nombreCat":"Subespecie",
+        "tituloCat":"Subespecie",
+
         "tarjetas":[
             {
                 "id":"PT1",
@@ -176,6 +182,8 @@
         
     },{
         "nombreCat":"Material",
+        "tituloCat":"Material",
+
         "tarjetas":[
             {
                 "id":"Id5",

@@ -1,11 +1,15 @@
 class CreadorDePersonajes{
     constructor(puntosInicio){
         this.datos=[];
+        this.datosIntra=[];
+        this.datosTotales=[];
         this.name="";
+        this.nameIntra="";
         this.selected=[];
         this.desplegadas=[];
         this.puntos=puntosInicio;
         this.cargarArchivo();
+        this.cargarArchivoIntra();
         this.initData();
         
     }
@@ -29,10 +33,29 @@ class CreadorDePersonajes{
         }
        
     }
+    crearBotonesIntra() {
+        var data = this.datosIntra;
+        var seccionBotones = $("#seccionesBotonesIntra");
+        seccionBotones.innerHTML = "";
+        var title = document.createElement("h3");
+        title.html = "Intra";
+
+        for (var i = 0; i<data.length; i++){
+            var element = data[i];
+            var seccionBoton = document.createElement("div");
+            seccionBoton.id = element["nombreCat"]
+            var boton = this.crearBoton(element);
+            
+            seccionBoton.append(boton);
+            seccionBotones.append(seccionBoton);
+            this.crearTarjetas2(element);
+        }
+       
+    }
 
     crearBoton(infoBoton){
         var boton = document.createElement("button");
-        boton.textContent = infoBoton["nombreCat"];
+        boton.textContent = infoBoton["tituloCat"];
         boton.addEventListener("click",this.desplegar.bind(this,infoBoton.nombreCat));
         return boton;
     }
@@ -68,6 +91,8 @@ class CreadorDePersonajes{
         
         this.updateVista();
     }
+
+    
 
 
     crearTarjeta(info){
@@ -133,8 +158,8 @@ class CreadorDePersonajes{
     }
 
     getTarjetaByID(id){
-        for(var i =0; i<this.datos.length; i++ ){
-            var cat = this.datos[i];
+        for(var i =0; i<this.datosTotales.length; i++ ){
+            var cat = this.datosTotales[i];
             var valores = cat["tarjetas"];
             for(var j=0; j<valores.length; j++)
             {
@@ -148,8 +173,8 @@ class CreadorDePersonajes{
     }
 
     comprobarIncompatibilidadesGeneral(){
-        for(var i =0; i<this.datos.length; i++ ){
-            var cat = this.datos[i];
+        for(var i =0; i<this.datosTotales.length; i++ ){
+            var cat = this.datosTotales[i];
             var valores = cat["tarjetas"];
             for(var j=0; j<valores.length; j++)
             {
@@ -169,6 +194,7 @@ class CreadorDePersonajes{
 
     updateVista(){
         this.updateNombre();
+        this.updateNombreIntra();
         this.updatePuntos();
         this.updateDesplegadas();
         this.updateSeccionesDesbloqueadas();
@@ -184,8 +210,14 @@ class CreadorDePersonajes{
         nombreTexto.val(this.name);
     }
 
+    updateNombreIntra(){
+        var nombreTexto = $("#textoNombreIntra");
+        if(this.nameIntra==undefined || this.nameIntra==null)
+            this.nameIntra = "";
+        nombreTexto.val(this.nameIntra);
+    }
     updateSeccionesDesbloqueadas(){
-        var data = this.datos;
+        var data = this.datosTotales;
         for(var i =0; i<data.length; i++){
             var categoria = data[i];
             var boton = $("#"+categoria.nombreCat);
@@ -217,8 +249,8 @@ class CreadorDePersonajes{
     }
 
     updateDesplegadas(){
-        for(var i =0; i<this.datos.length; i++){
-            var categoria = this.datos[i].nombreCat;
+        for(var i =0; i<this.datosTotales.length; i++){
+            var categoria = this.datosTotales[i].nombreCat;
             if(this.desplegadas.includes(categoria)){
                 var seccionTarjetas = $("#seccionTarjetas"+categoria);
                 seccionTarjetas.removeClass("sinDesplegar");
@@ -236,8 +268,8 @@ class CreadorDePersonajes{
     }
 
     updateTarjetas(){
-        for(var i =0; i<this.datos.length; i++ ){
-            var cat = this.datos[i];
+        for(var i =0; i<this.datosTotales.length; i++ ){
+            var cat = this.datosTotales[i];
             var valores = cat["tarjetas"];
             for(var j=0; j<valores.length; j++)
             {
@@ -289,7 +321,22 @@ class CreadorDePersonajes{
             .then((response)=>response.json())
             .then((archivo)=>{
                 this.datos=archivo;
+                for (var i=0; i<archivo.length; i++) {
+                    this.datosTotales.push(archivo[i])
+                }
                 this.crearBotones();
+                this.updateVista();
+            })
+    }
+    cargarArchivoIntra(){
+        fetch("archivos/datosIntra.json")
+            .then((response)=>response.json())
+            .then((archivo)=>{
+                this.datosIntra=archivo;
+                for (var i=0; i<archivo.length; i++) {
+                    this.datosTotales.push(archivo[i])
+                }
+                this.crearBotonesIntra();
                 this.updateVista();
             })
     }
@@ -330,7 +377,8 @@ class CreadorDePersonajes{
             "puntos":this.puntos,
             "seleccionados":this.selected,
             "desplegadas":this.desplegadas,
-            "nombre": this.name
+            "nombre": this.name,
+            "nombreIntra": this.nameIntra
         }
     }
 
@@ -361,6 +409,9 @@ class CreadorDePersonajes{
                     this.name = datos.nombre;
                     if(this.name == undefined)
                         this.name = "";
+                    this.nameIntra = datos.nombreIntra;
+                    if(this.nameIntra == undefined)
+                        this.nameIntra = "";
                     this.updateVista();
                     }
                     
@@ -482,6 +533,11 @@ class CreadorDePersonajes{
     cambiarNombre(){
         var nombreTexto = $("#textoNombre");
         this.name = nombreTexto.val();
+        this.guardarEnBaseDeDatos();
+    }
+    cambiarNombreIntra(){
+        var nombreTexto = $("#textoNombreIntra");
+        this.nameIntra = nombreTexto.val();
         this.guardarEnBaseDeDatos();
     }
 

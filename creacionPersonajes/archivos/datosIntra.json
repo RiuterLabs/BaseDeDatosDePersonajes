@@ -1,0 +1,103 @@
+[
+    {
+        "nombreCat":"Grupos-de-nucleos",
+        "tituloCat":"Grupos de núcleos",
+        "tarjetas":[
+            {
+                "id":"Naturales",
+                "titulo":"Naturales",
+                "coste":0,
+                "desc":"Eres un ser masculino"
+                
+            },
+            {
+                "id":"Profanos",
+                "titulo":"Profanos",
+                "coste":0,
+                "desc":"Eres un ser femenino"
+                
+            },
+            {
+                "id":"Sagrados",
+                "titulo":"Sagrados",
+                "coste":0,
+                "desc":"Eres un ser no binarie"
+                
+            },
+            {
+                "id":"Arcanos",
+                "titulo":"Arcanos",
+                "coste":0,
+                "desc":"Eres un ser femenino"
+                
+            },
+            {
+                "id":"Elementales",
+                "titulo":"Elementales",
+                "coste":0,
+                "desc":"Eres un ser no binarie"
+                
+            }
+        ]
+        
+    },
+    {
+        "nombreCat":"Elemental",
+        "tituloCat":"Elemental",
+        "tarjetas":[
+            {
+                "id":"Agua",
+                "titulo":"Agua",
+                "coste":0,
+                "desc":"Eres un ser masculino","requisitos":[
+                    "Elementales"
+                ]
+                
+            },
+            {
+                "id":"Aire",
+                "titulo":"Aire",
+                "coste":0,
+                "desc":"Eres un ser femenino"
+                ,"requisitos":[
+                    "Elementales"
+                ]
+                
+            },
+            {
+                "id":"Fuego",
+                "titulo":"Fuego",
+                "coste":0,
+                "desc":"Eres un ser no binarie"
+                ,"requisitos":[
+                    "Elementales"
+                ]
+                
+            },
+            {
+                "id":"Tierra",
+                "titulo":"Tierra",
+                "coste":0,
+                "desc":"Eres un ser femenino"
+                ,"requisitos":[
+                    "Elementales"
+                ]
+                
+            },
+            {
+                "id":"Electricidad",
+                "titulo":"Electricidad",
+                "coste":0,
+                "desc":"Eres un ser no binarie"
+                ,"requisitos":[
+                    "Elementales"
+                ]
+                
+            }
+        ],
+        "requisitos":[
+            "Elementales"
+        ]
+        
+    }
+]
