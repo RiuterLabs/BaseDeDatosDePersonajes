@@ -121,6 +121,7 @@ class CreadorDePersonajes{
         this.addTarjeta(info);
         if(info.incompatibilidades != undefined || info.incompatibilidades !=null)
             this.computeRequisites(info);
+        this.comprobarIncompatibilidadesGeneral();
         this.updateVista();
         this.guardarEnBaseDeDatos();
 
