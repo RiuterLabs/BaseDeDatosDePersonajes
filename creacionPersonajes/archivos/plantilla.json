@@ -1,0 +1,58 @@
+[
+    {
+        "nombreCat":"Cat1",
+        "tarjetas":[
+            {
+                "id":"Id1",
+                "titulo":"titulo",
+                "coste":5,
+                "desc":"Seleccionable1"
+            },
+            {
+                "id":"Id2",
+                "coste":25,
+                "desc":"Seleccionable2",
+                "requisitos":["Id1"]
+            }
+        ]
+        
+    },{
+        "nombreCat":"Cat2",
+        "tarjetas":[
+            {
+                "id":"Id3",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable1"
+            },
+            {
+                "id":"Id4",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable2"
+            }
+        ]
+        
+    },{
+        "nombreCat":"Cat3",
+        "tarjetas":[
+            {
+                "id":"Id5",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable1"
+            },
+            {
+                "id":"Id6",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable2"
+            }
+        ],
+        "requisitos":[
+            "Id4",
+            "Id1"
+        ]
+        
+    }
+]

@@ -1,52 +1,171 @@
 [
     {
-        "nombreCat":"Cat1",
+        "nombreCat":"Género",
         "tarjetas":[
             {
-                "id":"Id1",
-                "coste":5,
-                "desc":"Seleccionable1"
+                "id":"Masculino",
+                "titulo":"Masculino",
+                "coste":0,
+                "desc":"Eres un ser masculino"
+                
             },
             {
-                "id":"Id2",
-                "coste":25,
-                "desc":"Seleccionable2",
-                "requisitos":["Id1"]
+                "id":"Femenino",
+                "titulo":"Femenino",
+                "coste":0,
+                "desc":"Eres un ser femenino"
+            },
+            {
+                "id":"No-Binarie",
+                "titulo":"No Binarie",
+                "coste":0,
+                "desc":"Eres un ser no binarie"
             }
         ]
         
     },{
-        "nombreCat":"Cat2",
+        "nombreCat":"Especie",
         "tarjetas":[
             {
-                "id":"Id3",
-                "coste":25,
-                "desc":"Seleccionable1"
+                "id":"Humano",
+                "titulo":"Humano",
+                "coste":-10,
+                "desc":"Eres un humano"
             },
             {
-                "id":"Id4",
-                "coste":25,
-                "desc":"Seleccionable2"
+                "id":"Plasmoide",
+                "titulo":"Plasmoide",
+                "coste":0,
+                "desc":"Eres un Plasmoide"
+            },
+            {
+                "id":"Transmutado",
+                "titulo":"Transmutado",
+                "coste":0,
+                "desc":"Eres un Transmutado"
+            },
+            {
+                "id":"No-Carbonoide",
+                "titulo":"No Carbonoide",
+                "coste":0,
+                "desc":"Eres un No Carbonoide"
             }
         ]
         
     },{
-        "nombreCat":"Cat3",
+        "nombreCat":"Subespecie",
+        "tarjetas":[
+            {
+                "id":"PT1",
+                "titulo":"Plasmoide Tipo 1",
+                "coste":0,
+                "desc":"Conocidos por su cuerpo elástico y maleable a temperatura ambiente",
+                "requisitos":[
+                    "Plasmoide"
+                ]
+            },
+            {
+                "id":"PT2",
+                "titulo":"Plasmoide Tipo 2",
+                "coste":0,
+                "desc":"Conocidos por su cuerpo viscoso y gelatinoso a temperatura ambiente",
+                "requisitos":[
+                    "Plasmoide"
+                ]
+            },
+            {
+                "id":"PT3",
+                "titulo":"Plasmoide Tipo 3",
+                "coste":0,
+                "desc":"Conocidos por su cuerpo líquido y fluido a temperatura ambiente",
+                "requisitos":[
+                    "Plasmoide"
+                ]
+            },
+            {
+                "id":"PT0",
+                "titulo":"Plasmoide Tipo 0",
+                "coste":35,
+                "desc":"Variante rarísima y capaz de modificar su estado físico a voluntad",
+                "requisitos":[
+                    "Plasmoide"
+                ]
+            },
+            {
+                "id":"TT1",
+                "titulo":"Transmutado Tipo 1",
+                "coste":0,
+                "desc":"Transmutados de elementos puros, compuestos sencillos y metales",
+                "requisitos":[
+                    "Transmutado"
+                ]
+            },
+            {
+                "id":"TT2",
+                "titulo":"Transmutado Tipo 2",
+                "coste":0,
+                "desc":"Transmutados de compuestos orgánicos",
+                "requisitos":[
+                    "Transmutado"
+                ]
+            },
+            {
+                "id":"TT3",
+                "titulo":"Transmutado Tipo 3",
+                "coste":0,
+                "desc":"Transmutados de comida",
+                "requisitos":[
+                    "Transmutado"
+                ]
+            },
+            {
+                "id":"NCT1",
+                "titulo":"No Carbonoide Tipo 1",
+                "coste":0,
+                "desc":"No carbonoides de elementos puros, compuestos sencillos y metales",
+                "requisitos":[
+                    "No-Carbonoide"
+                ]
+            },
+            {
+                "id":"NCT2",
+                "titulo":"No Carbonoide Tipo 2",
+                "coste":0,
+                "desc":"No carbonoides de compuestos orgánicos",
+                "requisitos":[
+                    "No-Carbonoide"
+                ]
+            },
+            {
+                "id":"NCT3",
+                "titulo":"No Carbonoide Tipo 3",
+                "coste":0,
+                "desc":"No carbonoides de comida",
+                "requisitos":[
+                    "No-Carbonoide"
+                ]
+            }
+           
+        ]
+        
+    },{
+        "nombreCat":"Material",
         "tarjetas":[
             {
                 "id":"Id5",
+                "titulo":"titulo",
                 "coste":25,
                 "desc":"Seleccionable1"
             },
             {
                 "id":"Id6",
+                "titulo":"titulo",
                 "coste":25,
                 "desc":"Seleccionable2"
             }
         ],
         "requisitos":[
-            "Id4",
-            "Id1"
+            "No-Carbonoide|Transmutado"
         ]
         
     }

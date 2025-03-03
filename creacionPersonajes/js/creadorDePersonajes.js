@@ -74,7 +74,7 @@ class CreadorDePersonajes{
         var tarjeta = document.createElement("section");
         tarjeta.id = info["id"]
         var h4 = document.createElement("h4");
-        h4.textContent = info["id"];
+        h4.textContent = info["titulo"];
         var puntos = document.createElement("p");
         puntos.textContent = info["coste"];
         var img = document.createElement("img");
@@ -157,7 +157,7 @@ class CreadorDePersonajes{
 
         for(var i =0; i<requisitos.length; i++){
             var requisito = requisitos[i];
-            if(!this.selected.includes(requisito))
+            if(!this.evaluarCondiciones(requisito))
                 return false;
         }
         return true;
@@ -430,6 +430,31 @@ class CreadorDePersonajes{
         var nombreTexto = $("#textoNombre");
         this.name = nombreTexto.val();
         this.guardarEnBaseDeDatos();
+    }
+
+    evaluarCondiciones(cond){
+        if(cond.includes("|")){
+            var condiciones = cond.split("|");
+            for(var i =0; i<condiciones.length; i++){
+                var con = condiciones[i];
+                if(this.evaluarCondiciones(con))
+                    return true;
+            }
+            return false;
+        }else if(cond.includes("&")){
+            var condiciones = cond.split("&");
+            for(var i =0; i<condiciones.length; i++){
+                var con = condiciones[i];
+                if(!this.evaluarCondiciones(con))
+                    return false;
+            }
+            return true;
+        }else if(cond.includes("~")){
+            var condiciones = cond.split("~");
+            return !this.evaluarCondiciones(condiciones[0]);
+        }
+
+        return this.selected.includes(cond);    
     }
     
 }
