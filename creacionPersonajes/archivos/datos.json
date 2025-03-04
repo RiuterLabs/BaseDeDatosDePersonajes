@@ -181,6 +181,21 @@
         ]
         
     },{
+        "nombreCat":"FormaDeVida",
+        "tituloCat":"Formas de vida"
+
+        "tarjetas":[
+                {
+                "id":"id",
+                "titulo":"titulo",
+                "coste":0,
+                "desc":"desc",
+                "requisitos":[
+                    "Plasmoide"
+                ]
+            }
+        ]    
+    },{
         "nombreCat":"Material",
         "tituloCat":"Material",
 
@@ -202,5 +217,231 @@
             "TT1|NCT1"
         ]
         
+    },{
+        "nombreCat":"ColorOjos",
+        "tituloCat":"Color de ojos",
+
+        "tarjetas":[
+            {
+                "id":"Id7",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable1"
+            },
+            {
+                "id":"Id8",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable2"
+            }
+        ],
+        
+    },{
+        "nombreCat":"ColorPelo",
+        "tituloCat":"Color de pelo",
+
+        "tarjetas":[
+            {
+                "id":"Id9",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable1"
+            },
+            {
+                "id":"Id6",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable2"
+            }
+        ],
+        
+    },{
+        "nombreCat":"ColorPiel",
+        "tituloCat":"Color de piel",
+
+        "tarjetas":[
+            {
+                "id":"Id10",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable1"
+            },
+            {
+                "id":"Id6",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable2"
+            }
+        ],
+        
+    },{
+        "nombreCat":"Altura",
+        "tituloCat":"Altura",
+
+        "tarjetas":[
+            {
+                "id":"Id11",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable1"
+            },
+            {
+                "id":"Id12",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable2"
+            }
+        ],
+        
+    },{
+        "nombreCat":"Constitucion",
+        "tituloCat":"Constitución",
+
+        "tarjetas":[
+            {
+                "id":"Id13",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable1"
+            },
+            {
+                "id":"Id14",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable2"
+            }
+        ],
+        
+    },{
+        "nombreCat":"Altura",
+        "tituloCat":"Altura",
+
+        "tarjetas":[
+            {
+                "id":"Id15",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable1"
+            },
+            {
+                "id":"Id16",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable2"
+            }
+        ],
+        
+    },{
+        "nombreCat":"Pechos",
+        "tituloCat":"Tamaño de pechos",
+
+        "tarjetas":[
+            {
+                "id":"Id17",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable1"
+            },
+            {
+                "id":"Id18",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable2"
+            }
+        ],
+        
+    },{
+        "nombreCat":"Culo",
+        "tituloCat":"Tamaño de culo",
+
+        "tarjetas":[
+            {
+                "id":"Id19",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable1"
+            },
+            {
+                "id":"Id20",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable2"
+            }
+        ],
+        
+    },{
+        "nombreCat":"Pene",
+        "tituloCat":"Tamaño de pene",
+
+        "tarjetas":[
+            {
+                "id":"Id21",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable1"
+            },
+            {
+                "id":"Id22",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable2"
+            }
+        ],
+        
+    },{
+        "nombreCat":"Testículos",
+        "tituloCat":"Tamaño de testículos",
+
+        "tarjetas":[
+            {
+                "id":"Id23",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable1"
+            },
+            {
+                "id":"Id24",
+                "titulo":"titulo",
+                "coste":25,
+                "desc":"Seleccionable2"
+            }
+        ],
+        
+    },{
+        "nombreCat":"ModificacionesCorporales"
+        "tituloCat":"Modificaciones Corporales"
+
+        "tarjetas":[
+            {
+                "id":"MusculosReforzados",
+                "titulo":"Musculos reforzados",
+                "coste":0,
+                "desc":"Debido a un entrenamiento de alta intensidad o una modificación al maleabilizarte, tus capacidades físicas ahora están por las nubes"
+            },
+            {
+                "id":"MejorSistemaNervioso",
+                "titulo":"Sistema nervioso optimizado",
+                "coste":0,
+                "desc":"Quizás has hecho muchos sudokus o te has hecho con órganos de la doctora Tiff, pero ahora tu memoria, atención, y procesamiento se han disparado"
+            },
+            {
+                "id":"ControlCorporalAvanzado",
+                "titulo":"Control corporal avanzado",
+                "coste":0,
+                "desc":"Es cierto que la gente maleable puede hacer casi lo que quiera con su cuerpo, ¡pero con esto te será más natural y fácil!",
+                "requisitos":[
+                    "Plasmoide|Transmutado"
+                ]
+            },
+            {
+                "id":"id25",
+                "titulo":"titulo",
+                "coste":0,
+                "desc":"desc",
+                "requisitos":[
+                    "Transmutada"
+                ]
+            }
+        ]
     }
 ]
