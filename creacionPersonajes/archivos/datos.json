@@ -182,7 +182,7 @@
         
     },{
         "nombreCat":"FormaDeVida",
-        "tituloCat":"Formas de vida"
+        "tituloCat":"Formas de vida",
 
         "tarjetas":[
                 {
@@ -234,7 +234,7 @@
                 "coste":25,
                 "desc":"Seleccionable2"
             }
-        ],
+        ]
         
     },{
         "nombreCat":"ColorPelo",
@@ -253,7 +253,7 @@
                 "coste":25,
                 "desc":"Seleccionable2"
             }
-        ],
+        ]
         
     },{
         "nombreCat":"ColorPiel",
@@ -272,7 +272,7 @@
                 "coste":25,
                 "desc":"Seleccionable2"
             }
-        ],
+        ]
         
     },{
         "nombreCat":"Altura",
@@ -291,7 +291,7 @@
                 "coste":25,
                 "desc":"Seleccionable2"
             }
-        ],
+        ]
         
     },{
         "nombreCat":"Constitucion",
@@ -310,7 +310,7 @@
                 "coste":25,
                 "desc":"Seleccionable2"
             }
-        ],
+        ]
         
     },{
         "nombreCat":"Altura",
@@ -329,7 +329,7 @@
                 "coste":25,
                 "desc":"Seleccionable2"
             }
-        ],
+        ]
         
     },{
         "nombreCat":"Pechos",
@@ -348,7 +348,7 @@
                 "coste":25,
                 "desc":"Seleccionable2"
             }
-        ],
+        ]
         
     },{
         "nombreCat":"Culo",
@@ -367,7 +367,7 @@
                 "coste":25,
                 "desc":"Seleccionable2"
             }
-        ],
+        ]
         
     },{
         "nombreCat":"Pene",
@@ -386,7 +386,7 @@
                 "coste":25,
                 "desc":"Seleccionable2"
             }
-        ],
+        ]
         
     },{
         "nombreCat":"Testículos",
@@ -405,11 +405,11 @@
                 "coste":25,
                 "desc":"Seleccionable2"
             }
-        ],
+        ]
         
     },{
-        "nombreCat":"ModificacionesCorporales"
-        "tituloCat":"Modificaciones Corporales"
+        "nombreCat":"ModificacionesCorporales",
+        "tituloCat":"Modificaciones Corporales",
 
         "tarjetas":[
             {
