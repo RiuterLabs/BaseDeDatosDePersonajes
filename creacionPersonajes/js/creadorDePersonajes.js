@@ -3,6 +3,7 @@ class CreadorDePersonajes{
         this.datos=[];
         this.datosIntra=[];
         this.datosTotales=[];
+        this.colorOjos="";
         this.name="";
         this.nameIntra="";
         this.selected=[];
@@ -196,6 +197,7 @@ class CreadorDePersonajes{
     updateVista(){
         this.updateNombre();
         this.updateNombreIntra();
+        this.updateColorOjos();
         this.updatePuntos();
         this.updateDesplegadas();
         this.updateSeccionesDesbloqueadas();
@@ -204,6 +206,12 @@ class CreadorDePersonajes{
         
     }
 
+    updateColorOjos(){
+        var nombreTexto = $("#colorOjos");
+        if(this.colorOjos==undefined || this.colorOjos==null)
+            this.colorOjos = "#000000";
+        nombreTexto.val(this.colorOjos);
+    }
     updateNombre(){
         var nombreTexto = $("#textoNombre");
         if(this.name==undefined || this.name==null)
@@ -379,7 +387,8 @@ class CreadorDePersonajes{
             "seleccionados":this.selected,
             "desplegadas":this.desplegadas,
             "nombre": this.name,
-            "nombreIntra": this.nameIntra
+            "nombreIntra": this.nameIntra,
+            "colorOjos":this.colorOjos
         }
     }
 
@@ -413,6 +422,9 @@ class CreadorDePersonajes{
                     this.nameIntra = datos.nombreIntra;
                     if(this.nameIntra == undefined)
                         this.nameIntra = "";
+                    this.colorOjos = datos.colorOjos;
+                    if(this.colorOjos == undefined)
+                        this.colorOjos = "#000000"
                     this.updateVista();
                     }
                     
@@ -524,6 +536,10 @@ class CreadorDePersonajes{
                     this.desplegadas = json.desplegadas;
                 if(json.nombre!=undefined)
                     this.name = json.nombre;
+                if(json.nombreIntra!=undefined)
+                    this.nameIntra = json.nombreIntra;
+                if(json.colorOjos!=undefined)
+                    this.colorOjos = json.colorOjos;
                 this.guardarEnBaseDeDatos();
                 this.updateVista();
             }.bind(this)
@@ -539,6 +555,11 @@ class CreadorDePersonajes{
     cambiarNombreIntra(){
         var nombreTexto = $("#textoNombreIntra");
         this.nameIntra = nombreTexto.val();
+        this.guardarEnBaseDeDatos();
+    }
+    cambiarColorOjos(){
+        var nombreTexto = $("#colorOjos");
+        this.colorOjos = nombreTexto.val();
         this.guardarEnBaseDeDatos();
     }
 
