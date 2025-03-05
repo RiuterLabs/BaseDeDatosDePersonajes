@@ -4,6 +4,8 @@ class CreadorDePersonajes{
         this.datosIntra=[];
         this.datosTotales=[];
         this.colorOjos="";
+        this.colorPiel="";
+        this.colorPelo="";
         this.name="";
         this.nameIntra="";
         this.selected=[];
@@ -198,6 +200,8 @@ class CreadorDePersonajes{
         this.updateNombre();
         this.updateNombreIntra();
         this.updateColorOjos();
+        this.updateColorPelo();
+        this.updateColorPiel();
         this.updatePuntos();
         this.updateDesplegadas();
         this.updateSeccionesDesbloqueadas();
@@ -211,6 +215,18 @@ class CreadorDePersonajes{
         if(this.colorOjos==undefined || this.colorOjos==null)
             this.colorOjos = "#000000";
         nombreTexto.val(this.colorOjos);
+    }
+    updateColorPelo(){
+        var nombreTexto = $("#colorPelo");
+        if(this.colorPelo==undefined || this.colorPelo==null)
+            this.colorPelo = "#000000";
+        nombreTexto.val(this.colorPelo);
+    }
+    updateColorPiel(){
+        var nombreTexto = $("#colorPiel");
+        if(this.colorPiel==undefined || this.colorPiel==null)
+            this.colorPiel = "#000000";
+        nombreTexto.val(this.colorPiel);
     }
     updateNombre(){
         var nombreTexto = $("#textoNombre");
@@ -388,7 +404,9 @@ class CreadorDePersonajes{
             "desplegadas":this.desplegadas,
             "nombre": this.name,
             "nombreIntra": this.nameIntra,
-            "colorOjos":this.colorOjos
+            "colorOjos":this.colorOjos,
+            "colorPelo":this.colorPelo,
+            "colorPiel":this.colorPiel
         }
     }
 
@@ -425,6 +443,12 @@ class CreadorDePersonajes{
                     this.colorOjos = datos.colorOjos;
                     if(this.colorOjos == undefined)
                         this.colorOjos = "#000000"
+                    this.colorPelo = datos.colorPelo;
+                    if(this.colorPelo == undefined)
+                        this.colorPelo = "#000000"
+                    this.colorPiel = datos.colorPiel;
+                    if(this.colorPiel == undefined)
+                        this.colorPiel = "#000000"
                     this.updateVista();
                     }
                     
@@ -540,6 +564,10 @@ class CreadorDePersonajes{
                     this.nameIntra = json.nombreIntra;
                 if(json.colorOjos!=undefined)
                     this.colorOjos = json.colorOjos;
+                if(json.colorPelo!=undefined)
+                    this.colorPelo = json.colorPelo;
+                if(json.colorPiel!=undefined)
+                    this.colorPiel = json.colorPiel;
                 this.guardarEnBaseDeDatos();
                 this.updateVista();
             }.bind(this)
@@ -563,6 +591,16 @@ class CreadorDePersonajes{
         this.guardarEnBaseDeDatos();
     }
 
+    cambiarColorPiel(){
+        var nombreTexto = $("#colorPiel");
+        this.colorPiel = nombreTexto.val();
+        this.guardarEnBaseDeDatos();
+    }
+    cambiarColorPelo(){
+        var nombreTexto = $("#colorPelo");
+        this.colorPelo = nombreTexto.val();
+        this.guardarEnBaseDeDatos();
+    }
     evaluarCondiciones(cond){
         if(cond.includes("|")){
             var condiciones = cond.split("|");
