@@ -11,7 +11,15 @@
 .sinDesplegar{
     display: none;
 }
+.colores section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+.colores section input{
+    margin-right: 1em;
+}
 button{
     width: 100%;
     border-radius: 2em;
@@ -81,5 +89,10 @@ div div section p{
     div div section{
         width: 100%;
         height: auto;
+    }
+    .colores section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
