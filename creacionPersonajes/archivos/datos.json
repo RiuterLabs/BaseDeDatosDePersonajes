@@ -280,16 +280,34 @@
 
         "tarjetas":[
             {
-                "id":"Id11",
-                "titulo":"titulo",
+                "id":"alturaMinuscula",
+                "titulo":"Minusculo",
                 "coste":25,
-                "desc":"Seleccionable1"
+                "desc":"Con un poco de suerte llegas al metro. ¡Cuidado con las ratas!"
             },
             {
-                "id":"Id12",
-                "titulo":"titulo",
+                "id":"alturaBaja",
+                "titulo":"Bajito",
                 "coste":25,
-                "desc":"Seleccionable2"
+                "desc":"Estás en el rango general de metro-metro y medio. Ahora puedes sentarte a la mesa sin problemas"
+            },
+            {
+                "id":"alturaMedia",
+                "titulo":"Medio",
+                "coste":25,
+                "desc":"Aquí estás en el rango más común, entre uno sesenta y uno noventa. Podrás mirar a la gente a la cara"
+            },
+            {
+                "id":"alturaAlta",
+                "titulo":"Alto",
+                "coste":25,
+                "desc":"Aquí ya nos vamos hasta los dos metros veinte. Destacarás en casi cualquier habitación en la que estés"
+            },
+            {
+                "id":"alturaEnorme",
+                "titulo":"Enorme",
+                "coste":25,
+                "desc":"Si los dos metros te sabían a poco, ¡ahora llega a los tres! Pero ten cuidado con las puertas, ¿vale?"
             }
         ]
         
@@ -306,25 +324,6 @@
             },
             {
                 "id":"Id14",
-                "titulo":"titulo",
-                "coste":25,
-                "desc":"Seleccionable2"
-            }
-        ]
-        
-    },{
-        "nombreCat":"Altura",
-        "tituloCat":"Altura",
-
-        "tarjetas":[
-            {
-                "id":"Id15",
-                "titulo":"titulo",
-                "coste":25,
-                "desc":"Seleccionable1"
-            },
-            {
-                "id":"Id16",
                 "titulo":"titulo",
                 "coste":25,
                 "desc":"Seleccionable2"
