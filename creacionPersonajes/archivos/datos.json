@@ -218,96 +218,109 @@
         ]
         
     },{
-        "nombreCat":"ColorOjos",
-        "tituloCat":"Color de ojos",
-
-        "tarjetas":[
-            {
-                "id":"Id7",
-                "titulo":"titulo",
-                "coste":25,
-                "desc":"Seleccionable1"
-            },
-            {
-                "id":"Id8",
-                "titulo":"titulo",
-                "coste":25,
-                "desc":"Seleccionable2"
-            }
-        ]
-        
-    },{
-        "nombreCat":"ColorPelo",
-        "tituloCat":"Color de pelo",
-
-        "tarjetas":[
-            {
-                "id":"Id9",
-                "titulo":"titulo",
-                "coste":25,
-                "desc":"Seleccionable1"
-            },
-            {
-                "id":"Id6",
-                "titulo":"titulo",
-                "coste":25,
-                "desc":"Seleccionable2"
-            }
-        ]
-        
-    },{
-        "nombreCat":"ColorPiel",
-        "tituloCat":"Color de piel",
-
-        "tarjetas":[
-            {
-                "id":"Id10",
-                "titulo":"titulo",
-                "coste":25,
-                "desc":"Seleccionable1"
-            },
-            {
-                "id":"Id6",
-                "titulo":"titulo",
-                "coste":25,
-                "desc":"Seleccionable2"
-            }
-        ]
-        
-    },{
         "nombreCat":"Altura",
         "tituloCat":"Altura",
 
         "tarjetas":[
             {
-                "id":"alturaMinuscula",
+                "id":"alturaEnana",
                 "titulo":"Minusculo",
-                "coste":25,
-                "desc":"Con un poco de suerte llegas al metro. ¡Cuidado con las ratas!"
+                "coste":0,
+                "desc":"Te nos vas a quedar como mucho en el medio metro. ¡Cuidado con las ratas!",
+                "incompatibilidades":[
+                    "alturaPequeña",
+                    "alturaBaja",
+                    "alturaMedia",
+                    "alturaAlta",
+                    "alturaEnorme",
+                    "alturaGigante"
+                ]
+            },
+            {
+                "id":"alturaPequeña",
+                "titulo":"Pequeño",
+                "coste":0,
+                "desc":"Con un poco de suerte llegas al metro. Prepárate para que tengas que subirte a hombros de la gente para ver",
+                "incompatibilidades":[
+                    "alturaEnana",
+                    "alturaBaja",
+                    "alturaMedia",
+                    "alturaAlta",
+                    "alturaEnorme",
+                    "alturaGigante"
+                ]
             },
             {
                 "id":"alturaBaja",
-                "titulo":"Bajito",
-                "coste":25,
-                "desc":"Estás en el rango general de metro-metro y medio. Ahora puedes sentarte a la mesa sin problemas"
+                "titulo":"Bajo",
+                "coste":0,
+                "desc":"Estás en el rango general de metro-metro y medio. Ahora puedes sentarte a la mesa sin problemas",
+                "incompatibilidades":[
+                    "alturaEnana",
+                    "alturaPequeña",
+                    "alturaMedia",
+                    "alturaAlta",
+                    "alturaEnorme",
+                    "alturaGigante"
+                ]
             },
             {
                 "id":"alturaMedia",
                 "titulo":"Medio",
-                "coste":25,
-                "desc":"Aquí estás en el rango más común, entre uno sesenta y uno noventa. Podrás mirar a la gente a la cara"
+                "coste":0,
+                "desc":"Aquí estás en el rango más común, entre uno sesenta y uno noventa. Podrás mirar a la gente a la cara",
+                "incompatibilidades":[
+                    "alturaEnana",
+                    "alturaPequeña",
+                    "alturaBaja",
+                    "alturaAlta",
+                    "alturaEnorme",
+                    "alturaGigante"
+                ]
             },
             {
                 "id":"alturaAlta",
                 "titulo":"Alto",
-                "coste":25,
-                "desc":"Aquí ya nos vamos hasta los dos metros veinte. Destacarás en casi cualquier habitación en la que estés"
+                "coste":0,
+                "desc":"Aquí ya nos vamos hasta los dos metros veinte. Destacarás en casi cualquier habitación en la que estés",
+                "incompatibilidades":[
+                    "alturaEnana",
+                    "alturaPequeña",
+                    "alturaBaja",
+                    "alturaMedia",
+                    "alturaEnorme",
+                    "alturaGigante"
+                ]
             },
             {
                 "id":"alturaEnorme",
                 "titulo":"Enorme",
-                "coste":25,
-                "desc":"Si los dos metros te sabían a poco, ¡ahora llega a los tres! Pero ten cuidado con las puertas, ¿vale?"
+                "coste":0,
+                "desc":"Si los dos metros te sabían a poco, ¡ahora llega a los tres! Pero ten cuidado con las puertas, ¿vale?",
+                "incompatibilidades":[
+                    "alturaEnana",
+                    "alturaPequeña",
+                    "alturaBaja",
+                    "alturaMedia",
+                    "alturaAlta",
+                    "alturaGigante",
+                    "Humano"
+                ]
+            },
+            {
+                "id":"alturaGigante",
+                "titulo":"Gigante",
+                "coste":0,
+                "desc":"¿Cinco metros? Menos mal que puedes controlar tu cuerpo, porque si no estaría complicado encontrar un sitio para vivir",
+                "incompatibilidades":[
+                    "alturaEnana",
+                    "alturaPequeña",
+                    "alturaBaja",
+                    "alturaMedia",
+                    "alturaAlta",
+                    "alturaEnorme",
+                    "Humano"
+                ]
             }
         ]
         
@@ -317,16 +330,70 @@
 
         "tarjetas":[
             {
-                "id":"Id13",
-                "titulo":"titulo",
-                "coste":25,
-                "desc":"Seleccionable1"
+                "id":"constDelgada",
+                "titulo":"Delgado",
+                "coste":0,
+                "desc":"No tienes excesivo músculo ni grasa en los huesos. ¿Es una dieta nueva?",
+                "incompatibilidades":[
+                    "constIntermedia",
+                    "constEnForma",
+                    "constMusculada",
+                    "constCorpulenta"
+                ]
             },
             {
-                "id":"Id14",
-                "titulo":"titulo",
-                "coste":25,
-                "desc":"Seleccionable2"
+                "id":"constIntermedia",
+                "titulo":"Intermedio",
+                "coste":0,
+                "desc":"Bastante autodescriptivo, vas a estar en el promedio general humano, ni muy delgado ni muy corpulento",
+                "incompatibilidades":[
+                    "constDelgada",
+                    "constEnForma",
+                    "constMusculada",
+                    "constCorpulenta"
+                ]
+            },
+            {
+                "id":"constEnForma",
+                "titulo":"En Forma",
+                "coste":0,
+                "desc":"Tienes una buena cantidad de músculo, y se aprecian sus formas bien bajo la piel",
+                "incompatibilidades":[
+                    "constDelgada",
+                    "constIntermedia",
+                    "constMusculada",
+                    "constCorpulenta"
+                ]
+            },
+            {
+                "id":"constMusculada",
+                "titulo":"Musculado",
+                "coste":0,
+                "desc":"Tus músculos están casi a nivel de piel, con una definición impresionante. Con esos bíceps podrías levantar la economía de la Hegemonía",
+                "incompatibilidades":[
+                    "constDelgada",
+                    "constIntermedia",
+                    "constEnForma",
+                    "constCorpulenta"
+                ]
+            },
+            {
+                "id":"constCorpulenta",
+                "titulo":"Corpulento",
+                "coste":0,
+                "desc":"Ancho de huesos, achuchable, fuertecito. Hay adjetivos mil, pero tienes un buen cuerpo de padre (o madre)",
+                "incompatibilidades":[
+                    "constDelgada",
+                    "constIntermedia",
+                    "constEnForma",
+                    "constMusculada"
+                ]
+            },
+            {
+                "id":"constEsferica",
+                "titulo":"Esferico",
+                "coste":0,
+                "desc":"Ahora mismo eres un globo. Quizás te hayan pinchado con un inflador, o hayas inspirado mucho, pero vas rebotando por la vida"
             }
         ]
         
