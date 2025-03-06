@@ -336,16 +336,46 @@
 
         "tarjetas":[
             {
-                "id":"Id17",
-                "titulo":"titulo",
+                "id":"plana",
+                "titulo":"Pecho plano",
                 "coste":25,
-                "desc":"Seleccionable1"
+                "desc":"Plano, plano como una tabla... Una ventaja si no quieres dolores de espalda, o si no quieres dos bolsas de grasa pegadas al pecho. Cada uno a lo suyo."
             },
             {
-                "id":"Id18",
-                "titulo":"titulo",
+                "id":"pocoPecho",
+                "titulo":"Poco pecho",
                 "coste":25,
-                "desc":"Seleccionable2"
+                "desc":"Algo de pecho tienes. Aunque mucha gente lo consideraría poco, es el tamaño más práctico para actividades atléticas e ir saltando por ahí."
+            },
+            {
+                "id":"intermedio",
+                "titulo":"Intermedios",
+                "coste":25,
+                "desc":"El punto medio perfecto, suficientemente grandes como para que se noten, pero no lo suficiente como para que molesten. Pero, ¿De verdad estamos pensando en practicidad?"
+            },
+            {
+                "id":"grande",
+                "titulo":"Grandes",
+                "coste":25,
+                "desc":"¡Ya estamos hablando! Dos buenas, grandes y bonitas, perfectas para agarrar y lucirse. ¡Las indicadas para un auténtico fan de las glándulas mamarias!"
+            },
+            {
+                "id":"enormes",
+                "titulo":"Enormes",
+                "coste":25,
+                "desc":"Vale, cualquier persona te diría que te has pasado, ¡Pero yo no soy cualquier persona! Las tienes tan, o más grandes que tu cabeza. ¡Preciosas, suaves y blanditas! ¡Perfectas para dormir en ellas!"
+            },
+            {
+                "id":"dignasDeUnaSanta",
+                "titulo":"Dignas de una Santa",
+                "coste":25,
+                "desc":"Perfección para mucha gente, envidia para otras, absoluta locura para otras. Tienes unas SEÑORAS tetazas, hasta el punto de que igual podrían considerarse más almohadas que partes del cuerpo. Pero eh, si me dejas tocarlas."
+            },
+            {
+                "id":"SANTASTETASDELAMADRE",
+                "titulo":"SANTAS TETAS DE LA MADRE",
+                "coste":25,
+                "desc":"Gigantes, enormes, INCONMENSURABLES. Ahora sí que son almohadas gigantes pegadas a un cuerpo. Difíciles de llevar y cargar. Pero cómo me gustaría dormir en ellas..."
             }
         ]
         
