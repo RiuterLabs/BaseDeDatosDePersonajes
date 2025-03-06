@@ -3,6 +3,8 @@ class CreadorDePersonajes{
         this.datos=[];
         this.datosIntra=[];
         this.datosTotales=[];
+        this.datosLogros=[];
+        this.logrosDesbloqueados=[];
         this.colorOjos="";
         this.colorPiel="";
         this.colorPelo="";
@@ -10,9 +12,11 @@ class CreadorDePersonajes{
         this.nameIntra="";
         this.selected=[];
         this.desplegadas=[];
+        this.logrosDesplegados=false;
         this.puntos=puntosInicio;
         this.cargarArchivo();
         this.cargarArchivoIntra();
+        this.cargarArchivoLogros();
         this.initData();
         
     }
@@ -93,6 +97,43 @@ class CreadorDePersonajes{
         }
         
         this.updateVista();
+    }
+
+    crearTarjetasLogros(){
+        var seccionLogros = $("#seccionLogros");
+        for(var i =0; i<this.datosLogros.length; i++){
+            var logro = this.datosLogros[i];
+            var tarjetaLogro = this.crearTarjetaLogro(logro);
+            seccionLogros.append(tarjetaLogro);
+        }
+        this.updateVista();
+    }
+
+    crearTarjetaLogro(info){
+        var tarjeta = document.createElement("section");
+        tarjeta.id = "logro"+info["id"];
+        tarjeta.classList.add("logroDesbloqueado");
+        var h4 = document.createElement("h4");
+        h4.textContent = info["titulo"];
+        h4.id = "tituloLogro"+info.id;
+        var puntos = document.createElement("p");
+        puntos.id = "pistaLogro"+info.pista;
+        puntos.textContent = info["pista"];
+        var img = document.createElement("img");
+        $(img).attr("src","../multimedia/imagenes/creador/"+info["id"]+".jpg");
+        $(img).attr("alt",info["desc"]);
+        img.id = "imgLogro"+info.id;
+        var desc = document.createElement("p");
+        desc.textContent = info["desc"];
+        desc.id="descLogro"+info.id;
+        tarjeta.classList.add("Logro");
+
+
+        tarjeta.append(h4);
+        tarjeta.append(puntos);
+        tarjeta.append(img);
+        tarjeta.append(desc);
+        return tarjeta;
     }
 
     
@@ -207,7 +248,47 @@ class CreadorDePersonajes{
         this.updateSeccionesDesbloqueadas();
         this.updateTarjetas();
         this.updateYaLasTienes();
+        this.updateLogros();
         
+    }
+
+    updateLogros(){
+        this.checkLogros();
+        var seccionLogros = $("#seccionLogros");
+        if(this.logrosDesplegados)
+            seccionLogros.addClass("sinDesplegar");
+        else
+            seccionLogros.removeClass("sinDesplegar");
+    }
+
+    checkLogros(){
+        for(var i =0; i<this.datosLogros.length; i++){
+            var logro = this.datosLogros[i];
+            if(!this.logrosDesbloqueados.includes(logro.id)){
+                if(this.checkRequisitosCategorias(logro)){
+                    var header = $("#tituloLogro"+logro.id);
+                    header.html(logro.titulo);
+                    var desc = $("#descLogro"+logro.id);
+                    desc.html(logro.desc);
+                    var img =  $("#imgLogro"+logro.id);
+                    img.removeClass("sinDesplegar");
+                    var logroTarj = $("#logro"+logro.id);
+                    logroTarj.addClass("logroDesbloqueado");
+                    this.logrosDesbloqueados.push(logro.id);
+                    alert("LOGRO DESBLOQUEADO: "+logro.titulo+"\n"+logro.desc);
+                    this.guardarEnBaseDeDatos();
+                }else{
+                    var header = $("#tituloLogro"+logro.id);
+                    header.html("");
+                    var desc = $("#descLogro"+logro.id);
+                    desc.html("");
+                    var img =  $("#imgLogro"+logro.id);
+                    img.addClass("sinDesplegar");
+                    var logroTarj = $("#logro"+logro.id);
+                    logroTarj.removeClass("logroDesbloqueado");
+                }
+            }
+        }
     }
 
     updateColorOjos(){
@@ -365,6 +446,15 @@ class CreadorDePersonajes{
                 this.updateVista();
             })
     }
+    cargarArchivoLogros(){
+        fetch("archivos/logros.json")
+            .then((response)=>response.json())
+            .then((archivo)=>{
+                this.datosLogros=archivo;
+                this.crearTarjetasLogros();
+                this.updateVista();
+            })
+    }
 
 
     guardarEnBaseDeDatos(){
@@ -406,7 +496,8 @@ class CreadorDePersonajes{
             "nombreIntra": this.nameIntra,
             "colorOjos":this.colorOjos,
             "colorPelo":this.colorPelo,
-            "colorPiel":this.colorPiel
+            "colorPiel":this.colorPiel,
+            "logrosDesbloqueados":this.logrosDesbloqueados
         }
     }
 
@@ -448,7 +539,9 @@ class CreadorDePersonajes{
                         this.colorPelo = "#000000"
                     this.colorPiel = datos.colorPiel;
                     if(this.colorPiel == undefined)
-                        this.colorPiel = "#000000"
+                        this.colorPiel = "#000000";
+                    if(datos.logrosDesbloqueados !=undefined)
+                        this.logrosDesbloqueados = datos.logrosDesbloqueados;
                     this.updateVista();
                     }
                     
@@ -568,6 +661,8 @@ class CreadorDePersonajes{
                     this.colorPelo = json.colorPelo;
                 if(json.colorPiel!=undefined)
                     this.colorPiel = json.colorPiel;
+                if(json.logrosDesbloqueados!=undefined)
+                    this.logrosDesbloqueados = json.logrosDesbloqueados;
                 this.guardarEnBaseDeDatos();
                 this.updateVista();
             }.bind(this)
@@ -624,6 +719,10 @@ class CreadorDePersonajes{
         }
 
         return this.selected.includes(cond);    
+    }
+    toggleLogros(){
+        this.logrosDesplegados = !this.logrosDesplegados;
+        this.updateVista();
     }
     
 }

@@ -5,6 +5,10 @@
 .demasiadoCara{
     background-color: brown;
 }
+
+.logroDesbloqueado{
+    background-color: darkcyan;
+}
 .noTienesLaPrevia{
     display: none;
 }
@@ -15,6 +19,24 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+aside section{
+    display: flex;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: black;
+    position: relative;
+    border-radius: 1em;
+    border: solid 1em darkgoldenrod;
+    align-items: center;
+    flex-direction: column;
 }
 
 .colores section input{

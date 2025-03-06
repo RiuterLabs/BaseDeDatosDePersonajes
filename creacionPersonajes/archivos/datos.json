@@ -719,8 +719,8 @@
 
         "tarjetas":[
             {
-                "id":"Id21",
-                "titulo":"titulo",
+                "id":"genitalesBloste",
+                "titulo":"El Bloste",
                 "coste":25,
                 "desc":"Seleccionable1"
             },
