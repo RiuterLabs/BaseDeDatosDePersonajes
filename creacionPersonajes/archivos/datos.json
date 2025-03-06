@@ -407,42 +407,99 @@
                 "titulo":"Pecho plano",
                 "coste":25,
                 "desc":"Plano, plano como una tabla... Una ventaja si no quieres dolores de espalda, o si no quieres dos bolsas de grasa pegadas al pecho. Cada uno a lo suyo."
+                ,"incompatibilidades":[
+                    
+                    "pocoPecho",
+                    "intermedio",
+                    "grande",
+                    "enormes",
+                    "dignasDeUnaSanta",
+                    "SANTASTETASDELAMADRE"
+                ]
             },
             {
                 "id":"pocoPecho",
                 "titulo":"Poco pecho",
                 "coste":25,
                 "desc":"Algo de pecho tienes. Aunque mucha gente lo consideraría poco, es el tamaño más práctico para actividades atléticas e ir saltando por ahí."
+                ,"incompatibilidades":[
+                    "plana",
+                    "intermedio",
+                    "grande",
+                    "enormes",
+                    "dignasDeUnaSanta",
+                    "SANTASTETASDELAMADRE"
+                ]
             },
             {
                 "id":"intermedio",
                 "titulo":"Intermedios",
                 "coste":25,
                 "desc":"El punto medio perfecto, suficientemente grandes como para que se noten, pero no lo suficiente como para que molesten. Pero, ¿De verdad estamos pensando en practicidad?"
+                ,"incompatibilidades":[
+                    "plana",
+                    "pocoPecho",
+                    "grande",
+                    "enormes",
+                    "dignasDeUnaSanta",
+                    "SANTASTETASDELAMADRE"
+                ]
             },
             {
                 "id":"grande",
                 "titulo":"Grandes",
                 "coste":25,
                 "desc":"¡Ya estamos hablando! Dos buenas, grandes y bonitas, perfectas para agarrar y lucirse. ¡Las indicadas para un auténtico fan de las glándulas mamarias!"
+                ,"incompatibilidades":[
+                    "plana",
+                    "pocoPecho",
+                    "intermedio",
+                    "enormes",
+                    "dignasDeUnaSanta",
+                    "SANTASTETASDELAMADRE"
+                ]
             },
             {
                 "id":"enormes",
                 "titulo":"Enormes",
                 "coste":25,
                 "desc":"Vale, cualquier persona te diría que te has pasado, ¡Pero yo no soy cualquier persona! Las tienes tan, o más grandes que tu cabeza. ¡Preciosas, suaves y blanditas! ¡Perfectas para dormir en ellas!"
+                ,"incompatibilidades":[
+                    "plana",
+                    "pocoPecho",
+                    "intermedio",
+                    "grande",
+                    "dignasDeUnaSanta",
+                    "SANTASTETASDELAMADRE"
+                ]
             },
             {
                 "id":"dignasDeUnaSanta",
                 "titulo":"Dignas de una Santa",
                 "coste":25,
                 "desc":"Perfección para mucha gente, envidia para otras, absoluta locura para otras. Tienes unas SEÑORAS tetazas, hasta el punto de que igual podrían considerarse más almohadas que partes del cuerpo. Pero eh, si me dejas tocarlas."
+                ,"incompatibilidades":[
+                    "plana",
+                    "pocoPecho",
+                    "intermedio",
+                    "grande",
+                    "enormes",
+                    "SANTASTETASDELAMADRE"
+                ]
             },
             {
                 "id":"SANTASTETASDELAMADRE",
                 "titulo":"SANTAS TETAS DE LA MADRE",
                 "coste":25,
                 "desc":"Gigantes, enormes, INCONMENSURABLES. Ahora sí que son almohadas gigantes pegadas a un cuerpo. Difíciles de llevar y cargar. Pero cómo me gustaría dormir en ellas..."
+                ,"incompatibilidades":[
+                    "plana",
+                    "pocoPecho",
+                    "intermedio",
+                    "grande",
+                    "enormes",
+                    "dignasDeUnaSanta"
+                ]
             }
         ]
         
@@ -452,16 +509,207 @@
 
         "tarjetas":[
             {
-                "id":"Id19",
-                "titulo":"titulo",
+                "id":"plano",
+                "titulo":"Sin culo",
                 "coste":25,
-                "desc":"Seleccionable1"
+                "desc":"No sé cómo lo has hecho, pero no tienes culo. Tus gluteos son básicamente inexistentes. Tus muslos se unen directamente a tu cadera. No es ni culo carpeta, es... ¿Estás bien?"
+                ,"incompatibilidades":[
+                    "culoCarpeta",
+                    "culito",
+                    "buenCulo",
+                    "culazo",
+                    "culoPerfecto",
+                    "asientoPortatil"
+                ]
             },
             {
-                "id":"Id20",
-                "titulo":"titulo",
+                "id":"culoCarpeta",
+                "titulo":"Culo carpeta",
                 "coste":25,
-                "desc":"Seleccionable2"
+                "desc":"Bueno, tienes poco, pero algo tienes. No resaltas nada, nadie te mirará por la calle, ni aunque quieras, pero al menos tienes unas proporciones NATURALES."
+                ,"incompatibilidades":[
+                    "plano",
+                    "culito",
+                    "buenCulo",
+                    "culazo",
+                    "culoPerfecto",
+                    "asientoPortatil"
+                ]
+            },
+            {
+                "id":"culito",
+                "titulo":"Culito",
+                "coste":25,
+                "desc":"Un culito decentillo y relativamente bien formado. No es muy destacable que digamos, pero es cómodo y suficientemente grande como para ser considerado bonito... para un humano."
+                ,"incompatibilidades":[
+                    "plano",
+                    "culoCarpeta",
+                    "buenCulo",
+                    "culazo",
+                    "culoPerfecto",
+                    "asientoPortatil"
+                ]
+            },
+            {
+                "id":"buenCulo",
+                "titulo":"Buen Culo",
+                "coste":25,
+                "desc":"Mira, ahora sí que te diría que sí a una cena. Tienes un buen culo, bien formado, de buen tamaño y listo para ser agarrado y cacheteado. Pasa rutina y dieta, anda."
+                ,"incompatibilidades":[
+                    "plano",
+                    "culoCarpeta",
+                    "culito",
+                    "culazo",
+                    "culoPerfecto",
+                    "asientoPortatil"
+                ]
+            },
+            {
+                "id":"culazo",
+                "titulo":"Culazo",
+                "coste":25,
+                "desc":"¡Tremendo culazo! Grande, tonificado, suave y con fuerza. Eres la envidia de cualquier persona normal. Poco más que decir, la verdad, más que eso, TREMENDO CULAAAZOOOOO"
+                ,"incompatibilidades":[
+                    "plano",
+                    "culoCarpeta",
+                    "culito",
+                    "buenCulo",
+                    "culoPerfecto",
+                    "asientoPortatil"
+                ]
+            },
+            {
+                "id":"culoPerfecto",
+                "titulo":"Perfección absoluta culil",
+                "coste":25,
+                "desc":"Más que un culazo. La mezcla perfecta de musculatura y grasa para dar lugar a un culo que literalmente será la envidia de cualquier ser. Enorme, pero no demasiado impráctico. Y todas las sillas serán sofás para ti, ¡Qué suerte!"
+                ,"incompatibilidades":[
+                    "plano",
+                    "culoCarpeta",
+                    "culito",
+                    "buenCulo",
+                    "culazo",
+                    "asientoPortatil"
+                ]
+            },
+            {
+                "id":"asientoPortatil",
+                "titulo":"Asiento portátil",
+                "coste":25,
+                "desc":"Ya no tienes culo, tienes un beanie bag, ya sabes, las bolas estas que se dejan en el suelo y puedes hasta tumbarte en ellas. Tan enorme que puedes sentarte estando de pie, pero moverte debe ser un grano en el culo..."
+                ,"incompatibilidades":[
+                    "plano",
+                    "culoCarpeta",
+                    "culito",
+                    "buenCulo",
+                    "culazo",
+                    "culoPerfecto"
+                ]
+            }
+        ]
+        
+    },{
+        "nombreCat":"Muslos",
+        "tituloCat":"Tamaño de muslos y caderas",
+
+        "tarjetas":[
+            {
+                "id":"muslosPalillo",
+                "titulo":"Palillos",
+                "coste":25,
+                "desc":"Ya no es simplemente que siempre te saltes el día de pierna, sino que parece que llevas sin andar meses o años. ¿Puedes andar sin que se te partan las piernas? Habrá que probarlo..."
+                ,"incompatibilidades":[
+                    "muslosPlanos",
+                    "muslosIntermedios",
+                    "muslosConCurvas",
+                    "muslosChildBearing",
+                    "muslosFuertes",
+                    "muslosBloqueaPuertas"
+                ]
+            },
+            {
+                "id":"muslosPlanos",
+                "titulo":"Planos",
+                "coste":25,
+                "desc":"Sólo te saltas el día de piernas, normal, también te digo, es un puto coñazo... Aún así, no tienes nada que agarrar, de una forma humanamente posible, claro. Haz más ejercicio, por favor."
+                ,"incompatibilidades":[
+                    "muslosPalillo",
+                    "muslosIntermedios",
+                    "muslosConCurvas",
+                    "muslosChildBearing",
+                    "muslosFuertes",
+                    "muslosBloqueaPuertas"
+                ]
+            },
+            {
+                "id":"muslosIntermedios",
+                "titulo":"Decentes",
+                "coste":25,
+                "desc":"Unos muslos y caderas bastante decentillos, nada del otro mundo, pero nada desdeñables. Muy promedio, muy normal, muy... aburrido"
+                ,"incompatibilidades":[
+                    "muslosPalillo",
+                    "muslosPlanos",
+                    "muslosConCurvas",
+                    "muslosChildBearing",
+                    "muslosFuertes",
+                    "muslosBloqueaPuertas"
+                ]
+            },
+            {
+                "id":"muslosConCurvas",
+                "titulo":"Buenas Curvas",
+                "coste":25,
+                "desc":"¡Se notan los meses de gimnasio! O la buena genética, cualquiera de las dos. Tienes buenos muslos y caderas, bastante gente te envidiaría, la verdad"
+                ,"incompatibilidades":[
+                    "muslosPalillo",
+                    "muslosPlanos",
+                    "muslosIntermedios",
+                    "muslosChildBearing",
+                    "muslosFuertes",
+                    "muslosBloqueaPuertas"
+                ]
+            },
+            {
+                "id":"muslosChildBearing",
+                "titulo":"Muslos para repoblar un pueblo moribundo",
+                "coste":25,
+                "desc":"La envidia de todo el mundo. Tienes unos muslos y unas caderas fuertes, poderosos y con la cantidad justa y necesaria de grasa. Perfección absoluta. ¿Cuándo me vas a reventar a golpes de cadera?"
+                ,"incompatibilidades":[
+                    "muslosPalillo",
+                    "muslosPlanos",
+                    "muslosIntermedios",
+                    "muslosConCurvas",
+                    "muslosFuertes",
+                    "muslosBloqueaPuertas"
+                ]
+            },
+            {
+                "id":"muslosFuertes",
+                "titulo":"Parte melones",
+                "coste":25,
+                "desc":"Joder... Por favor, aplástame con esos muslos capaces de partir melones. Apriétame la cabeza hasta que reviente y acabe desparramada por las paredes, por favor...¿De qué estábamos hablando?"
+                ,"incompatibilidades":[
+                    "muslosPalillo",
+                    "muslosPlanos",
+                    "muslosIntermedios",
+                    "muslosConCurvas",
+                    "muslosChildBearing",
+                    "muslosBloqueaPuertas"
+                ]
+            },
+            {
+                "id":"muslosBloqueaPuertas",
+                "titulo":"Bloquea puertas",
+                "coste":25,
+                "desc":"¿Te acuerdas de lo que decía de que lo excesivo era para cobardes? Bueno, te lo has tomado a muslos, por lo que veo. Tienes muslos y caderas tan grandes como alta es una persona. No creo que puedas pasar por ninguna puerta sin reventarla. Pero como se diría en mi pueblo: Si no entra, que raje"
+                ,"incompatibilidades":[
+                    "muslosPalillo",
+                    "muslosPlanos",
+                    "muslosIntermedios",
+                    "muslosConCurvas",
+                    "muslosChildBearing",
+                    "muslosFuertes"
+                ]
             }
         ]
         
