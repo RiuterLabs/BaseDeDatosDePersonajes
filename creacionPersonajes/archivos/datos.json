@@ -714,21 +714,119 @@
         ]
         
     },{
-        "nombreCat":"Pene",
-        "tituloCat":"Tamaño de pene",
+        "nombreCat":"Genitales",
+        "tituloCat":"Genitales y tamaño",
 
         "tarjetas":[
             {
-                "id":"genitalesBloste",
-                "titulo":"El Bloste",
-                "coste":25,
-                "desc":"Seleccionable1"
+                "id":"genitalesVagina",
+                "titulo":"Vagina",
+                "coste":0,
+                "desc":"Felicidades, ahora tienes lo que la mayor parte de gente del planeta elige tener. ¡Pero sin problema, que a casi todo el mundo le gusta!"
             },
             {
-                "id":"Id22",
-                "titulo":"titulo",
-                "coste":25,
-                "desc":"Seleccionable2"
+                "id":"genitalesClitoris",
+                "titulo":"Clítoris",
+                "coste":0,
+                "desc":"Una adición razonable en todos los casos, algo tienes que tener para entretenerte en tus ratos libres, ¿eh?"
+            },
+            {
+                "id":"genitalesPeneClitoris",
+                "titulo":"Pene clítoris",
+                "coste":0,
+                "desc":"...no voy a juzgar esto, si te van estas cosas, ¿pero para eso eliges tener pene?",
+                "incompatibilidades":[
+                    "genitalesMicropene",
+                    "genitalesPenePequeño",
+                    "genitalesPeneMediano",
+                    "genitalesPeneGrande",
+                    "genitalesPeneEnorme",
+                    "genitalesBloste"
+                ]
+            },
+            {
+                "id":"genitalesMicropene",
+                "titulo":"Micropene",
+                "coste":0,
+                "desc":"Bueno, este por lo menos es más o menos usable. Quizás no te sirva mucho, pero se pueden hacer cosas con él",
+                "incompatibilidades":[
+                    "genitalesPeneClitoris",
+                    "genitalesPenePequeño",
+                    "genitalesPeneMediano",
+                    "genitalesPeneGrande",
+                    "genitalesPeneEnorme",
+                    "genitalesBloste"
+                ]
+            },
+            {
+                "id":"genitalesPenePequeño",
+                "titulo":"Pene pequeño",
+                "coste":0,
+                "desc":"No entras ya en que tu condición tenga nombre, pero aún así... Míralo por el lado bueno, no se te marcará por debajo de la ropa (si llevas)",
+                "incompatibilidades":[
+                    "genitalesPeneClitoris",
+                    "genitalesMicropene",
+                    "genitalesPeneMediano",
+                    "genitalesPeneGrande",
+                    "genitalesPeneEnorme",
+                    "genitalesBloste"
+                ]
+            },
+            {
+                "id":"genitalesPeneMediano",
+                "titulo":"Pene mediano",
+                "coste":0,
+                "desc":"Hay quien dice que la virtud está en la moderación, ni muy grande ni muy pequeño, justo en el punto",
+                "incompatibilidades":[
+                    "genitalesPeneClitoris",
+                    "genitalesMicropene",
+                    "genitalesPenePequeño",
+                    "genitalesPeneGrande",
+                    "genitalesPeneEnorme",
+                    "genitalesBloste"
+                ]
+            },
+            {
+                "id":"genitalesPeneGrande",
+                "titulo":"Pene grande",
+                "coste":0,
+                "desc":"Aquí ya estamos empezando a hablar. La mayoría de juguetes vienen de este tamaño, así que no te hará competencia un trozo de plástico",
+                "incompatibilidades":[
+                    "genitalesPeneClitoris",
+                    "genitalesMicropene",
+                    "genitalesPenePequeño",
+                    "genitalesPeneMediano",
+                    "genitalesPeneEnorme",
+                    "genitalesBloste"
+                ]
+            },
+            {
+                "id":"genitalesPeneEnorme",
+                "titulo":"Pene enorme",
+                "coste":0,
+                "desc":"Con esta arma, podrían detenerte. ¡No tendrás que preocuparte de no saber con qué abrir nueces!",
+                "incompatibilidades":[
+                    "genitalesPeneClitoris",
+                    "genitalesMicropene",
+                    "genitalesPenePequeño",
+                    "genitalesPeneMediano",
+                    "genitalesPeneGrande",
+                    "genitalesBloste"
+                ]
+            },
+            {
+                "id":"genitalesBloste",
+                "titulo":"El Bloste",
+                "coste":0,
+                "desc":"Y ahora preguntarás, ¿qué es el Bloste? Pues la verdad es que no lo sé. ¿Por qué no le das y lo compruebas?",
+                "incompatibilidades":[
+                    "genitalesPeneClitoris",
+                    "genitalesMicropene",
+                    "genitalesPenePequeño",
+                    "genitalesPeneMediano",
+                    "genitalesPeneGrande",
+                    "genitalesPeneEnorme"
+                ]
             }
         ]
         
@@ -738,16 +836,82 @@
 
         "tarjetas":[
             {
-                "id":"Id23",
-                "titulo":"titulo",
-                "coste":25,
-                "desc":"Seleccionable1"
+                "id":"testInexistentes",
+                "titulo":"Inexistentes",
+                "coste":0,
+                "desc":"A fin de cuentas, ¿quién querría tener una debilidad tan abierta?",
+                "incompatibilidades":[
+                    "testInternos",
+                    "testPequeños",
+                    "testMedianos",
+                    "testGrandes",
+                    "testEnormes"
+                ]
             },
             {
-                "id":"Id24",
-                "titulo":"titulo",
-                "coste":25,
-                "desc":"Seleccionable2"
+                "id":"testInternos",
+                "titulo":"Internos",
+                "coste":0,
+                "desc":"Buena opción, si aún quieres, y te facilita la producción de gametos",
+                "incompatibilidades":[
+                    "testInexistentes",
+                    "testPequeños",
+                    "testMedianos",
+                    "testGrandes",
+                    "testEnormes"
+                ]
+            },
+            {
+                "id":"testPequeños",
+                "titulo":"Pequeños",
+                "coste":0,
+                "desc":"A ver, no puedo decir nada, ¿pero has estado abusando de la testosterona de la Hegemonía?",
+                "incompatibilidades":[
+                    "testInexistentes",
+                    "testInternos",
+                    "testMedianos",
+                    "testGrandes",
+                    "testEnormes"
+                ]
+            },
+            {
+                "id":"testMedianos",
+                "titulo":"Medianos",
+                "coste":0,
+                "desc":"Un tamaño adecuado. No quedarán demasiado fuera de lugar a menos que haya una diferencia de tamaño importante con el pene",
+                "incompatibilidades":[
+                    "testInexistentes",
+                    "testInternos",
+                    "testPequeños",
+                    "testGrandes",
+                    "testEnormes"
+                ]
+            },
+            {
+                "id":"testGrandes",
+                "titulo":"Grandes",
+                "coste":0,
+                "desc":"Buenas bolas, buen tamaño, buena consistencia... Aunque un poco grandes para mi gusto",
+                "incompatibilidades":[
+                    "testInexistentes",
+                    "testInternos",
+                    "testPequeños",
+                    "testMedianos",
+                    "testEnormes"
+                ]
+            },
+            {
+                "id":"testEnormes",
+                "titulo":"Enormes",
+                "coste":0,
+                "desc":"Joder, con unos de ese tamaño, estoy bastante segura de que podrías ahogar a alguien",
+                "incompatibilidades":[
+                    "testInexistentes",
+                    "testInternos",
+                    "testPequeños",
+                    "testMedianos",
+                    "testGrandes"
+                ]
             }
         ]
         
