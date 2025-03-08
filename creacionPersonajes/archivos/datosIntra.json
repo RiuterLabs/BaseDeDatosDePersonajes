@@ -280,5 +280,64 @@
             "Profanos"
         ]
         
+    },  {
+        "nombreCat":"Nucleos-Arcanos",
+        "tituloCat":"Núcleos Arcanos",
+        "tarjetas":[
+            {
+                "id":"Espacio",
+                "titulo":"Espacio",
+                "coste":0,
+                "desc":"Ufff, este ha tenido controversias hace poco. El Núcleo del Espacio, la Continuidad y la Gestión en su momento fue portado por Daeda Run, la Tejedora, y recientemente por una abogada, Straw, de la que no vamos a hablar... Sus Llamadas de transporte, control espacial, y relatividad pueden ser muy útiles, pero asegúrate de darles un uso un poco mejor que la que le dio la última",
+                "requisitos":[
+                    "Arcanos"
+                ]
+                
+            },
+            {
+                "id":"Tiempo",
+                "titulo":"Tiempo",
+                "coste":0,
+                "desc":"Seguramente el Núcleo más peligroso, por su potencial y de quién viene la mayor parte de su poder, el Extraño. Gracias a la Madre (gracias también por el aumento, jefa), ha sido siempre portado por personas con al menos dos dedos de frente, como Zaio, el Archivador, y Santa Katarina, jefa actual de las Hermanas. Además, quien porte este Núcleo tiene la titánica tarea de mantener la consistencia del universo y la línea temporal. ¡Gracias, Kate!"
+                ,"requisitos":[
+                    "Arcanos"
+                ]
+                
+            },
+            {
+                "id":"Ritos",
+                "titulo":"Ritos",
+                "coste":0,
+                "desc":"¡Este es el mío! Ideal para gente, como yo, que sepa de programación. Ritos, Metodismo, y Estudio son los tres aspectos de este Núcleo, y con él, puedes programar en la misma realidad, permitiéndote hacer cualquier cosa desde una moneda que vibre si intentan entrar a tu casa hasta programar un edificio entero para que se adapte a las necesidades y deseos de quien haya dentro (aviso, no viene con conocimientos de interiorismo). Eso sí, apunta todo lo que hagas y funciona, no te estés pegando con un fallo durante semanas porque se te ha olvidado definir una variable"
+                ,"requisitos":[
+                    "Arcanos"
+                ]
+                
+            },
+            {
+                "id":"Evocación",
+                "titulo":"Evocación",
+                "coste":0,
+                "desc":"Evocación, Máquinas y Leyes... Es una pena que uno tan útil esté en manos de Smith, y más después del uso ejemplar que le dio Maerul, que impulsó la tecnología enormemente en su momento. Puedes mirar una máquina y entender hasta su más mínima parte perfectamente, y recrearla casi con dos palos y un escupitajo, o puedes usar su parte más aburrida para manipular textos e imponer en parte tu voluntad a tu alrededos. De verdad, teniendo potencialmente ordenadores infinitos, ¿quién querría andar cambiando un par de palabras por ahí?"
+                ,"requisitos":[
+                    "Arcanos"
+                ]
+                
+            },
+            {
+                "id":"Interacción",
+                "titulo":"Interacción",
+                "coste":0,
+                "desc":"Este es de mis favoritos, no sabes lo bien que me vendría tener uno o dos daemonios de este... Aunque, eso es algo que diría casi cualquier persona. Interacción se basa en, bueno, las interacciones, desde el punto de vista físico, químico, intraesencial... ¡Te permite combinar las cosas mucho más fácilmente! Y eso, combinado con su inventiva, el ser capaz de ver probabilidades, y ser capaz de dividir todo a sus componentes más básicos para después recombinarlos, lo hace seguramente el Núcleo más versátil junto con Adaptación"
+                ,"requisitos":[
+                    "Arcanos"
+                ]
+                
+            }
+        ],
+        "requisitos":[
+            "Arcanos"
+        ]
+        
     }
 ]
