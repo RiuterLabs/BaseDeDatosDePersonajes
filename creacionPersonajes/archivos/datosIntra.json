@@ -4,52 +4,55 @@
         "tituloCat":"Grupos de núcleos",
         "tarjetas":[
             {
-                "id":"Naturales",
-                "titulo":"Naturales",
+                "id":"Elementales",
+                "titulo":"Elementales",
                 "coste":0,
-                "desc":"Eres un ser masculino"
-                
-            },
-            {
-                "id":"Profanos",
-                "titulo":"Profanos",
-                "coste":0,
-                "desc":"Eres un ser femenino"
+                "desc":"Aire, Tierra, Agua, Fuego y Electricidad. Gracias a los núcleos de La Maga podrás controlar los elementos que componen nuestro mundo (Según los arcanistas y la gente que no sabe de química, claro)."
                 
             },
             {
                 "id":"Sagrados",
                 "titulo":"Sagrados",
                 "coste":0,
-                "desc":"Eres un ser no binarie"
+                "desc":"La epítome de la fe, pureza y fanatismo absolutos. Con estos núcleos tocados por La Madre y La Maga podrás hacer todo lo luminoso, sanador y esterotípicamente bonito. Pero que no se te suba a la cabeza..."
                 
             },
+            {
+                "id":"Naturales",
+                "titulo":"Naturales",
+                "coste":0,
+                "desc":"Ya sabes, los núcleos más cercanos a La Jefa (O La Madre, como la queráis llamar). Con cosas como animales, plantas, curar más cosas... ¡Perfecto si te encantan las cosas que se mueven, babean y crecen!"
+                
+            },
+            {
+                "id":"Profanos",
+                "titulo":"Profanos",
+                "coste":0,
+                "desc":"Uuuuuuh, quieres ser una chica mala, ¿Eh? ¡De puta madre! ¡Alza a los muertos de sus tumbas, lee las almas de la gente, pudre todo a tu alrededor y manipula a la gente con tus dotes oscuras! (Este espacio ha sido patrocinado por la Asociación de Partidarias del Núcleo de los Demonios)"
+                
+            },
+            
             {
                 "id":"Arcanos",
                 "titulo":"Arcanos",
                 "coste":0,
-                "desc":"Eres un ser femenino"
-                
-            },
-            {
-                "id":"Elementales",
-                "titulo":"Elementales",
-                "coste":0,
-                "desc":"Eres un ser no binarie"
+                "desc":"Los más misteriosos y extraños. No se sabe del todo por qué, pero con estos podrás manipular los hilos del propio tejido de la realidad. El espacio y el tiempo se rendirán ante ti. Verás todo como un código extraño. Eso sí, cuidado con acercarte demasiado a Lo Extraño..."
                 
             }
+            
         ]
         
     },
     {
-        "nombreCat":"Elemental",
-        "tituloCat":"Elemental",
+        "nombreCat":"Nucleos-Elementales",
+        "tituloCat":"Núcleos Elementales",
         "tarjetas":[
             {
                 "id":"Agua",
                 "titulo":"Agua",
                 "coste":0,
-                "desc":"Eres un ser masculino","requisitos":[
+                "desc":"¡Agua, fiesta, borrachera y felicidad! Probablemente de los núcleos a los que más les va la juerga, no llaman al anterior portador El Borracho por nada, ajaja. Eso sí, si vas a seguir a Sanabaur, más te vale llevarte un paraguas (Y una botella de vino)...",
+                "requisitos":[
                     "Elementales"
                 ]
                 
@@ -58,7 +61,7 @@
                 "id":"Aire",
                 "titulo":"Aire",
                 "coste":0,
-                "desc":"Eres un ser femenino"
+                "desc":"El núcleo de la velocidad y la conquista (Créeme, esta gente es muy pesada con 'El arte de la conquista' de Von Wenfen). Técnicamente debería ser imparcial, pero El Don de los Enclaves me paga, así que... ¡Este núcleo te hará volar por ahí y podrás inflarte como si fueras un globo (Que sé que a mucha gente le va eso)! Desde luego, es un soplo de aire fresco, jeje."
                 ,"requisitos":[
                     "Elementales"
                 ]
@@ -68,7 +71,7 @@
                 "id":"Fuego",
                 "titulo":"Fuego",
                 "coste":0,
-                "desc":"Eres un ser no binarie"
+                "desc":"Oh no, tenemos a un intensito por aquí. Por favor, no dejes que tu ardiente pasión y fervor te quemen los ojos (Literalmente, ¿No sabes lo que le pasó a Al-Azsj?). Menos mal que Sanabaur y las fervorianas están ahí para templarte y controlarte. Eso sí, ¿Y lo de putísima madre quemarlo todo a tu paso?"
                 ,"requisitos":[
                     "Elementales"
                 ]
@@ -78,7 +81,7 @@
                 "id":"Tierra",
                 "titulo":"Tierra",
                 "coste":0,
-                "desc":"Eres un ser femenino"
+                "desc":"Rígida como una piedra, maleable como el barro (Y fértil como la tierra abonada, claro, que sabemos quién lleva esto). ¡El núcleo de Santa Megumi! ¡Crea terremotos con tus pies, lanza rocas por los aires y sé más terca que una puta mula (Por algo llamaban así a Atxomedarian, La Mula Sísmica)!"
                 ,"requisitos":[
                     "Elementales"
                 ]
@@ -88,7 +91,7 @@
                 "id":"Electricidad",
                 "titulo":"Electricidad",
                 "coste":0,
-                "desc":"Eres un ser no binarie"
+                "desc":"Impredecible, caótica, estruendosa y guapísima, no se me ocurre mejor forma de describir tanto a Berbatho como a MADAMME CHISPAAAS (Estoy contractualmente obligada a llamarla así). Ya sabes cómo va esto, ¡El poder ilimitado del rayo y el trueno en la palma de tu mano! Por favor, intenta no freirle los cerebros a nadie, ¿Sabes el coñazo que es regenerarlos?"
                 ,"requisitos":[
                     "Elementales"
                 ]
