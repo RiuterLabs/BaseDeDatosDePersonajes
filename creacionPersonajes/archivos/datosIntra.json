@@ -104,8 +104,8 @@
         
     },
     {
-        "nombreCat":"Sagrada",
-        "tituloCat":"Sagrada",
+        "nombreCat":"Nucleos-Sagrados",
+        "tituloCat":"Núcleos Sagrados",
         "tarjetas":[
             {
                 "id":"Luz",
@@ -229,7 +229,7 @@
                 "id":"Oscuridad",
                 "titulo":"Oscuridad",
                 "coste":0,
-                "desc":"¡Agua, fiesta, borrachera y felicidad! Probablemente de los núcleos a los que más les va la juerga, no llaman al anterior portador El Borracho por nada, ajaja. Eso sí, si vas a seguir a Sanabaur, más te vale llevarte un paraguas (Y una botella de vino)...",
+                "desc":"Así que quieres ser el señor de la noche, los secretos y la confianza, ¿Eh? Bueno, siempre puedes pedirle consejo al Don, afortunadamente. Controla las sombras, acapara los secretos más oscuros de la gente y aprovéchate de la confianza que tienes con ella siguiendo las enseñanzas del Confidente. ¡El núcleo perfecto para los informantes (O los taberneros)!",
                 "requisitos":[
                     "Profanos"
                 ]
@@ -239,7 +239,7 @@
                 "id":"Daemonios",
                 "titulo":"Daemonios",
                 "coste":0,
-                "desc":"El núcleo de la velocidad y la conquista (Créeme, esta gente es muy pesada con 'El arte de la conquista' de Von Wenfen). Técnicamente debería ser imparcial, pero El Don de los Enclaves me paga, así que... ¡Este núcleo te hará volar por ahí y podrás inflarte como si fueras un globo (Que sé que a mucha gente le va eso)! Desde luego, es un soplo de aire fresco, jeje."
+                "desc":"¡Daemonios, conspiraciones y pactos! Ahh, el núcleo de las contradicciones y el poder político en general (A Cael'Ar'Mun se le llama Lord e instigador de rebeliones por algo). Arrímate a los gobernantes y cuando estén demasiado cómodos... ¡Apoya a los gobernados para desestabilizarlo todo! Con esto tendrás el destino de la sociedad y la política en la palma de tu mano (Ah, y también puedes invocar daemonios y espíritus, aunque el Don no lo haga. Mola, ¿No?)."
                 ,"requisitos":[
                     "Profanos"
                 ]
@@ -249,7 +249,7 @@
                 "id":"Putrefaccion",
                 "titulo":"Putrefacción",
                 "coste":0,
-                "desc":"Oh no, tenemos a un intensito por aquí. Por favor, no dejes que tu ardiente pasión y fervor te quemen los ojos (Literalmente, ¿No sabes lo que le pasó a Al-Azsj?). Menos mal que Sanabaur y las fervorianas están ahí para templarte y controlarte. Eso sí, ¿Y lo de putísima madre quemarlo todo a tu paso?"
+                "desc":"Eww... ¿De verdad te gusta esto? A ver, sí, controlar las enfermedades es útil y los seguidores del Maestro Az son gente muy centrada y solidaria (A ver, lleva siendo así desde los tiempos de Praktheed, así que no me sorprende). Pero espero que comprendas que no me guste estar con gente que no solo se está pudriendo en vida, sino que también pudren y corroen todo su entorno... Y huelen fatal."
                 ,"requisitos":[
                     "Profanos"
                 ]
@@ -259,7 +259,7 @@
                 "id":"Muerte",
                 "titulo":"Muerte",
                 "coste":0,
-                "desc":"Rígida como una piedra, maleable como el barro (Y fértil como la tierra abonada, claro, que sabemos quién lleva esto). ¡El núcleo de Santa Megumi! ¡Crea terremotos con tus pies, lanza rocas por los aires y sé más terca que una puta mula (Por algo llamaban así a Atxomedarian, La Mula Sísmica)!"
+                "desc":"Mmmmm, el dulce consuelo de la muerte, tan dulce como las obras de Armonía, la Pastelera de Libertas. La garantía de que La Justa pondrá a todo el mundo en su lugar. A mí me parece un poco aburrido, pero si lo que quieres es ver y manipular almas y alzar a los muertos para que hagan las cosas por ti, siempre puedes seguir la senda de la nigromancia. (O eso o te dedicas a las leyes y la justicia, lo cual hace que sea más aburrido todavía) "
                 ,"requisitos":[
                     "Profanos"
                 ]
@@ -269,7 +269,7 @@
                 "id":"Vacio",
                 "titulo":"Vacío",
                 "coste":0,
-                "desc":"Impredecible, caótica, estruendosa y guapísima, no se me ocurre mejor forma de describir tanto a Berbatho como a MADAMME CHISPAAAS (Estoy contractualmente obligada a llamarla así). Ya sabes cómo va esto, ¡El poder ilimitado del rayo y el trueno en la palma de tu mano! Por favor, intenta no freirle los cerebros a nadie, ¿Sabes el coñazo que es regenerarlos?"
+                "desc":"Sexo, el chiste es sexo. Nah, pese a lo que pueda parecer, este núcleo tiene mucho más que simplemente la Succión y los tentáculos. El núcleo de la belleza, la locura, la gravedad y la Nada, perfecto para la gente que quiera ser bailarina en un pub de mala muerte como Phradi. O también puedes ayudarnos un poco en la Congregación bajo la atenta mirada de Santa Alicia, lo que quieras... (Sí, también estoy contractualmente obligada a hacernos propaganda, así que ¿EH,TÚ? ¿TE GUSTA FOLLAR Y LOS TENTÁCULOS? PUES VEN AQUÍ)"
                 ,"requisitos":[
                     "Profanos"
                 ]
