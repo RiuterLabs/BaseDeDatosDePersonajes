@@ -836,6 +836,13 @@
 
         "tarjetas":[
             {
+                "id":"testOvarios",
+                "titulo":"Ovarios",
+                "coste":0,
+                "desc":"La opción correcta si quieres ser capaz de engendrar descendencia por tu propia cuenta, como yo."
+                
+            },
+            {
                 "id":"testInexistentes",
                 "titulo":"Inexistentes",
                 "coste":0,
@@ -947,9 +954,479 @@
                 "coste":0,
                 "desc":"desc",
                 "requisitos":[
-                    "Transmutada"
+                    "Transmutado"
                 ]
             }
         ]
+    },{
+        "nombreCat":"LugarDeNacimiento",
+        "tituloCat":"Lugar de nacimiento",
+
+        "tarjetas":[
+            {
+                "id":"lnHegemonia",
+                "titulo":"La Hegemonía",
+                "coste":0,
+                "desc":"El último baluarte de la humanidad... es un sitio decadente lleno de odio y miseria. Siempre bajo la atenta mirada del Gran Hegemón y dispuestos a defenderse con uñas y dientes de lo que, según la propaganda, son horrorosos monstruos comehumanos (Joder, ya sé que no damos muy buena imagen, pero tan malos no somos, ¿No?)"
+                ,"incompatibilidades":[
+                    "lnLibertas",
+                    "lnLechoDeSanta",
+                    "lnPalasex",
+                    "lnElFervor",
+                    "lnBiuTauOr",
+                    "lnBiuTauOcc",
+                    "lnArchipielago",
+                    "lnEnclaves",
+                    "lnGranEmporio",
+                    "lnOasis",
+                    "lnTimarAurhum"
+                ]
+            },
+            {
+                "id":"lnLibertas",
+                "titulo":"Libertas",
+                "coste":0,
+                "desc":"El centro de toda la actividad del mundo, una ciudad cosmopolita que reune a gente de todos lados ya no del mundo, ¡Sino del universo! Es conocida por sus universidades, laboratorios destinados a la investigación de formas de vida maleables y por acoger a cualquier persona que quiera estar ahí por libre decisión. (Yo vivo y trabajo allí, por cierto, ¡Saludos desde Libertas!)",
+                "incompatibilidades":[
+                    "lnHegemonia",
+                    "lnLechoDeSanta",
+                    "lnPalasex",
+                    "lnElFervor",
+                    "lnBiuTauOr",
+                    "lnBiuTauOcc",
+                    "lnArchipielago",
+                    "lnEnclaves",
+                    "lnGranEmporio",
+                    "lnOasis",
+                    "lnTimarAurhum"
+                ]
+            },
+            {
+                "id":"lnLechoDeSanta",
+                "titulo":"Lecho de la Santa",
+                "coste":0,
+                "desc":"(DISCLAIMER: LEGALMENTE NO PUEDO SER IMPARCIAL) Actual (Y única a lo largo de la historia) sede de la Congregación de las Hermanas de Santa Megumi. El Lecho es altamente conocido por lo peculiar de su fauna y flora basadas en tentáculos y serpientes, además de porque todos los edificios están conectados por barras, grietas y ganchos para que las plasmoides tipo 1 puedan saltar, balancearse y rebotar. ¡También es el centro médico en el que se reúnen las mayores eminencias en cualquier tipo de disciplina! (Y si quieres tener la noche de tu vida, créeme, este es tu sitio)",
+                "incompatibilidades":[
+                    "lnHegemonia",
+                    "lnLibertas",
+                    "lnPalasex",
+                    "lnElFervor",
+                    "lnBiuTauOr",
+                    "lnBiuTauOcc",
+                    "lnArchipielago",
+                    "lnEnclaves",
+                    "lnGranEmporio",
+                    "lnOasis",
+                    "lnTimarAurhum"
+                ]
+            },
+            {
+                "id":"lnPalasex",
+                "titulo":"El Palasex",
+                "coste":0,
+                "desc":"A ver, técnicamente no es un país per se, pero sí que es una zona políticamente independiente... Bueno, este sitio es básicamente un mega parque de atracciones en el que LITERALMENTE te puedes encontrar de todo, desde cangrejoides de más allá de La Llama buscando nuevos vínculos hasta fanáticos de un tipo muy específico de terror de Edén de hace milenios, ¡Y todos ellos con su zona delimitada!",
+                "incompatibilidades":[
+                    "lnHegemonia",
+                    "lnLibertas",
+                    "lnLechoDeSanta",
+                    "lnElFervor",
+                    "lnBiuTauOr",
+                    "lnBiuTauOcc",
+                    "lnArchipielago",
+                    "lnEnclaves",
+                    "lnGranEmporio",
+                    "lnOasis",
+                    "lnTimarAurhum"
+                ]
+            },
+            {
+                "id":"lnElFervor",
+                "titulo":"El Fervor",
+                "coste":0,
+                "desc":"El país con la historia, cultura y todo en general, más longevo de este mundo (Coño y tanto, como que lleva 3000000 años existiendo, no te jode). Principalmente poblado por plasmoides tipo 3, por lo que mucha de la arquitectura está basada en tuberías, canales y ríos por los que alguien líquido puede simplemente fluir (Algún día tendría que probarlo...). Ah, y es la zona con más conocimiento arcano y espiritista del mundo. ¡Todo el mundo es un elementalista!",
+                "incompatibilidades":[
+                    "lnHegemonia",
+                    "lnLibertas",
+                    "lnLechoDeSanta",
+                    "lnPalasex",
+                    "lnBiuTauOr",
+                    "lnBiuTauOcc",
+                    "lnArchipielago",
+                    "lnEnclaves",
+                    "lnGranEmporio",
+                    "lnOasis",
+                    "lnTimarAurhum"
+                ]
+            },
+            {
+                "id":"lnBiuTauOr",
+                "titulo":"BiuTau Oriental",
+                "coste":0,
+                "desc":"Una zona marcada por el conflicto con sus vecinos occidentales (En realidad sólo se han peleado un par de veces por un río medio congelado, así que...). Irrigado por el río BiuTau y cubierto de pantanos y junglas de plantas y seres gelatinosos, este es el sitio ideal para una plasmoide tipo 2. ¡Ten cuidado y no te estampes con los árboles!",
+                "incompatibilidades":[
+                    "lnHegemonia",
+                    "lnLibertas",
+                    "lnLechoDeSanta",
+                    "lnPalasex",
+                    "lnElFervor",
+                    "lnBiuTauOcc",
+                    "lnArchipielago",
+                    "lnEnclaves",
+                    "lnGranEmporio",
+                    "lnOasis",
+                    "lnTimarAurhum"
+                ]
+            },
+            {
+                "id":"lnBiuTauOcc",
+                "titulo":"BiuTau Occidental",
+                "coste":0,
+                "desc":"Una zona marcada por el conflicto con sus vecinos orientales (Estos son los que suelen atacar más, por cierto, por eso el río está medio congelado...). Irrigado por el río BiuTau y cubierto por una frondosa selva congelada hasta arriba de nievorilas, ranárboles de chocolate y demás flora y fauna helada, por lo que es el asentamiento perfecto para las transmutadas y no carbonoides de materiales congelados (O si te gusta el helado, claro).",
+                "incompatibilidades":[
+                    "lnHegemonia",
+                    "lnLibertas",
+                    "lnLechoDeSanta",
+                    "lnPalasex",
+                    "lnElFervor",
+                    "lnBiuTauOr",
+                    "lnArchipielago",
+                    "lnEnclaves",
+                    "lnGranEmporio",
+                    "lnOasis",
+                    "lnTimarAurhum"
+                ]
+            },
+            {
+                "id":"lnArchipielago",
+                "titulo":"Archipiélago de Los Santos",
+                "coste":0,
+                "desc":"Curiosamente, no hay mucha gente que haya visitado este pequeño archipiélago gobernado por los Santos Zoo'Mani. Lo único que sabemos es que tienen una cultura basada en los 'deportes de contacto', lo que normalmente se reduce a una glorificación de la violencia en busca de la emoción de la confrontación... ¡Pero eh, su gente es majísima si no te dejas intimidar por sus formas medio animales!  ",
+                "incompatibilidades":[
+                    "lnHegemonia",
+                    "lnLibertas",
+                    "lnLechoDeSanta",
+                    "lnPalasex",
+                    "lnElFervor",
+                    "lnBiuTauOr",
+                    "lnBiuTauOcc",
+                    "lnEnclaves",
+                    "lnGranEmporio",
+                    "lnOasis",
+                    "lnTimarAurhum"
+                ]
+            },
+            {
+                "id":"lnEnclaves",
+                "titulo":"Enclaves Libres",
+                "coste":0,
+                "desc":"Un conjunto de pequeños estados federales llamados distritos, cada uno de ellos dedicado a la manufactura y el comercio de un tipo de mercancía distinto. Este país gobernado por El Don de los Enclaves se fundó como un refugio para la gente que escapó de la Hegemonía durante la rebelión fallida y de las fábricas de Hall&Co. Se come de puta madre y se vive mejor, honestamente, ¡Por algo es la segunda zona más variada del mundo!",
+                "incompatibilidades":[
+                    "lnHegemonia",
+                    "lnLibertas",
+                    "lnLechoDeSanta",
+                    "lnPalasex",
+                    "lnElFervor",
+                    "lnBiuTauOr",
+                    "lnBiuTauOcc",
+                    "lnArchipielago",
+                    "lnGranEmporio",
+                    "lnOasis",
+                    "lnTimarAurhum"
+                ]
+            },
+            {
+                "id":"lnGranEmporio",
+                "titulo":"Gran Emporio de Hall",
+                "coste":0,
+                "desc":"Lo siento, de verdad que lo siento... Si has nacido aquí, huye, si vives aquí, huye. Da igual lo que seas, si estás aquí mucho tiempo, serás poco más que una máquina expendedora más que ordeñar. No se puede decir que este sitio tenga población, sino eso, recursos humanos que serán explotados por el chocolateado puño de Hellen Hall.",
+                "incompatibilidades":[
+                    "lnHegemonia",
+                    "lnLibertas",
+                    "lnLechoDeSanta",
+                    "lnPalasex",
+                    "lnElFervor",
+                    "lnBiuTauOr",
+                    "lnBiuTauOcc",
+                    "lnArchipielago",
+                    "lnEnclaves",
+                    "lnOasis",
+                    "lnTimarAurhum"
+                ]
+            },
+            {
+                "id":"lnOasis",
+                "titulo":"El Oasis",
+                "coste":0,
+                "desc":"¡Mira, un buen sitio para vivir! Fundado por la Doctora Tiffanny y las supervivientes de las fábricas de Hall&Co, este es un auténtico remanso de paz para las no carbonoides tipo 3, lleno de fauna y flora dulce y abundante para asegurar su autonomía. ¡El sitio perfecto para unas vacaciones y para cagarte en los muertos de la gente que te ha esclavizado!",
+                "incompatibilidades":[
+                    "lnHegemonia",
+                    "lnLibertas",
+                    "lnLechoDeSanta",
+                    "lnPalasex",
+                    "lnElFervor",
+                    "lnBiuTauOr",
+                    "lnBiuTauOcc",
+                    "lnArchipielago",
+                    "lnEnclaves",
+                    "lnGranEmporio",
+                    "lnTimarAurhum"
+                ]
+            },
+            {
+                "id":"lnTimarAurhum",
+                "titulo":"Solemne y Áureo Reino de Timar Aurhum",
+                "coste":0,
+                "desc":"El país con mayor poder militar del oeste, fundado por el Gran Rey Aureliano tras la rebelión fallida en las cuevas occidentales influenciadas por el núcleo de la protección y el metal. Actualmente es una monarquía absolutista en la que poco puedes hacer si quieres algo de privacidad, ¡Pero eh, puedes ver arañas de cristal y dragones de metal gigantes con cuatro puños (Están guapísimos los Geidures, ¿A que sí?)!",
+                "incompatibilidades":[
+                    "lnHegemonia",
+                    "lnLibertas",
+                    "lnLechoDeSanta",
+                    "lnPalasex",
+                    "lnElFervor",
+                    "lnBiuTauOr",
+                    "lnBiuTauOcc",
+                    "lnArchipielago",
+                    "lnEnclaves",
+                    "lnGranEmporio",
+                    "lnOasis"
+                ]
+            }
+        ]
+        
+    },{
+        "nombreCat":"LugarDeResidencia",
+        "tituloCat":"Lugar de Residencia",
+
+        "tarjetas":[
+            {
+                "id":"lrHegemonia",
+                "titulo":"La Hegemonía",
+                "coste":0,
+                "desc":"El último baluarte de la humanidad... es un sitio decadente lleno de odio y miseria. Siempre bajo la atenta mirada del Gran Hegemón y dispuestos a defenderse con uñas y dientes de lo que, según la propaganda, son horrorosos monstruos comehumanos (Joder, ya sé que no damos muy buena imagen, pero tan malos no somos, ¿No?)"
+                ,"incompatibilidades":[
+                    "lrLibertas",
+                    "lrLechoDeSanta",
+                    "lrPalasex",
+                    "lrElFervor",
+                    "lrBiuTauOr",
+                    "lrBiuTauOcc",
+                    "lrArchipielago",
+                    "lrEnclaves",
+                    "lrGranEmporio",
+                    "lrOasis",
+                    "lrTimarAurhum"
+                ]
+            },
+            {
+                "id":"lrLibertas",
+                "titulo":"Libertas",
+                "coste":0,
+                "desc":"El centro de toda la actividad del mundo, una ciudad cosmopolita que reune a gente de todos lados ya no del mundo, ¡Sino del universo! Es conocida por sus universidades, laboratorios destinados a la investigación de formas de vida maleables y por acoger a cualquier persona que quiera estar ahí por libre decisión. (Yo vivo y trabajo allí, por cierto, ¡Saludos desde Libertas!)",
+                "incompatibilidades":[
+                    "lrHegemonia",
+                    "lrLechoDeSanta",
+                    "lrPalasex",
+                    "lrElFervor",
+                    "lrBiuTauOr",
+                    "lrBiuTauOcc",
+                    "lrArchipielago",
+                    "lrEnclaves",
+                    "lrGranEmporio",
+                    "lrOasis",
+                    "lrTimarAurhum"
+                ]
+            },
+            {
+                "id":"lrLechoDeSanta",
+                "titulo":"Lecho de la Santa",
+                "coste":0,
+                "desc":"(DISCLAIMER: LEGALMENTE NO PUEDO SER IMPARCIAL) Actual (Y única a lo largo de la historia) sede de la Congregación de las Hermanas de Santa Megumi. El Lecho es altamente conocido por lo peculiar de su fauna y flora basadas en tentáculos y serpientes, además de porque todos los edificios están conectados por barras, grietas y ganchos para que las plasmoides tipo 1 puedan saltar, balancearse y rebotar. ¡También es el centro médico en el que se reúnen las mayores eminencias en cualquier tipo de disciplina! (Y si quieres tener la noche de tu vida, créeme, este es tu sitio)",
+                "incompatibilidades":[
+                    "lrHegemonia",
+                    "lrLibertas",
+                    "lrPalasex",
+                    "lrElFervor",
+                    "lrBiuTauOr",
+                    "lrBiuTauOcc",
+                    "lrArchipielago",
+                    "lrEnclaves",
+                    "lrGranEmporio",
+                    "lrOasis",
+                    "lrTimarAurhum"
+                ]
+            },
+            {
+                "id":"lrPalasex",
+                "titulo":"El Palasex",
+                "coste":0,
+                "desc":"A ver, técnicamente no es un país per se, pero sí que es una zona políticamente independiente... Bueno, este sitio es básicamente un mega parque de atracciones en el que LITERALMENTE te puedes encontrar de todo, desde cangrejoides de más allá de La Llama buscando nuevos vínculos hasta fanáticos de un tipo muy específico de terror de Edén de hace milenios, ¡Y todos ellos con su zona delimitada!",
+                "incompatibilidades":[
+                    "lrHegemonia",
+                    "lrLibertas",
+                    "lrLechoDeSanta",
+                    "lrElFervor",
+                    "lrBiuTauOr",
+                    "lrBiuTauOcc",
+                    "lrArchipielago",
+                    "lrEnclaves",
+                    "lrGranEmporio",
+                    "lrOasis",
+                    "lrTimarAurhum"
+                ]
+            },
+            {
+                "id":"lrElFervor",
+                "titulo":"El Fervor",
+                "coste":0,
+                "desc":"El país con la historia, cultura y todo en general, más longevo de este mundo (Coño y tanto, como que lleva 3000000 años existiendo, no te jode). Principalmente poblado por plasmoides tipo 3, por lo que mucha de la arquitectura está basada en tuberías, canales y ríos por los que alguien líquido puede simplemente fluir (Algún día tendría que probarlo...). Ah, y es la zona con más conocimiento arcano y espiritista del mundo. ¡Todo el mundo es un elementalista!",
+                "incompatibilidades":[
+                    "lrHegemonia",
+                    "lrLibertas",
+                    "lrLechoDeSanta",
+                    "lrPalasex",
+                    "lrBiuTauOr",
+                    "lrBiuTauOcc",
+                    "lrArchipielago",
+                    "lrEnclaves",
+                    "lrGranEmporio",
+                    "lrOasis",
+                    "lrTimarAurhum"
+                ]
+            },
+            {
+                "id":"lrBiuTauOr",
+                "titulo":"BiuTau Oriental",
+                "coste":0,
+                "desc":"Una zona marcada por el conflicto con sus vecinos occidentales (En realidad sólo se han peleado un par de veces por un río medio congelado, así que...). Irrigado por el río BiuTau y cubierto de pantanos y junglas de plantas y seres gelatinosos, este es el sitio ideal para una plasmoide tipo 2. ¡Ten cuidado y no te estampes con los árboles!",
+                "incompatibilidades":[
+                    "lrHegemonia",
+                    "lrLibertas",
+                    "lrLechoDeSanta",
+                    "lrPalasex",
+                    "lrElFervor",
+                    "lrBiuTauOcc",
+                    "lrArchipielago",
+                    "lrEnclaves",
+                    "lrGranEmporio",
+                    "lrOasis",
+                    "lrTimarAurhum"
+                ]
+            },
+            {
+                "id":"lrBiuTauOcc",
+                "titulo":"BiuTau Occidental",
+                "coste":0,
+                "desc":"Una zona marcada por el conflicto con sus vecinos orientales (Estos son los que suelen atacar más, por cierto, por eso el río está medio congelado...). Irrigado por el río BiuTau y cubierto por una frondosa selva congelada hasta arriba de nievorilas, ranárboles de chocolate y demás flora y fauna helada, por lo que es el asentamiento perfecto para las transmutadas y no carbonoides de materiales congelados (O si te gusta el helado, claro).",
+                "incompatibilidades":[
+                    "lrHegemonia",
+                    "lrLibertas",
+                    "lrLechoDeSanta",
+                    "lrPalasex",
+                    "lrElFervor",
+                    "lrBiuTauOr",
+                    "lrArchipielago",
+                    "lrEnclaves",
+                    "lrGranEmporio",
+                    "lrOasis",
+                    "lrTimarAurhum"
+                ]
+            },
+            {
+                "id":"lrArchipielago",
+                "titulo":"Archipiélago de Los Santos",
+                "coste":0,
+                "desc":"Curiosamente, no hay mucha gente que haya visitado este pequeño archipiélago gobernado por los Santos Zoo'Mani. Lo único que sabemos es que tienen una cultura basada en los 'deportes de contacto', lo que normalmente se reduce a una glorificación de la violencia en busca de la emoción de la confrontación... ¡Pero eh, su gente es majísima si no te dejas intimidar por sus formas medio animales!  ",
+                "incompatibilidades":[
+                    "lrHegemonia",
+                    "lrLibertas",
+                    "lrLechoDeSanta",
+                    "lrPalasex",
+                    "lrElFervor",
+                    "lrBiuTauOr",
+                    "lrBiuTauOcc",
+                    "lrEnclaves",
+                    "lrGranEmporio",
+                    "lrOasis",
+                    "lrTimarAurhum"
+                ]
+            },
+            {
+                "id":"lrEnclaves",
+                "titulo":"Enclaves Libres",
+                "coste":0,
+                "desc":"Un conjunto de pequeños estados federales llamados distritos, cada uno de ellos dedicado a la manufactura y el comercio de un tipo de mercancía distinto. Este país gobernado por El Don de los Enclaves se fundó como un refugio para la gente que escapó de la Hegemonía durante la rebelión fallida y de las fábricas de Hall&Co. Se come de puta madre y se vive mejor, honestamente, ¡Por algo es la segunda zona más variada del mundo!",
+                "incompatibilidades":[
+                    "lrHegemonia",
+                    "lrLibertas",
+                    "lrLechoDeSanta",
+                    "lrPalasex",
+                    "lrElFervor",
+                    "lrBiuTauOr",
+                    "lrBiuTauOcc",
+                    "lrArchipielago",
+                    "lrGranEmporio",
+                    "lrOasis",
+                    "lrTimarAurhum"
+                ]
+            },
+            {
+                "id":"lrGranEmporio",
+                "titulo":"Gran Emporio de Hall",
+                "coste":0,
+                "desc":"Lo siento, de verdad que lo siento... Si has nacido aquí, huye, si vives aquí, huye. Da igual lo que seas, si estás aquí mucho tiempo, serás poco más que una máquina expendedora más que ordeñar. No se puede decir que este sitio tenga población, sino eso, recursos humanos que serán explotados por el chocolateado puño de Hellen Hall.",
+                "incompatibilidades":[
+                    "lrHegemonia",
+                    "lrLibertas",
+                    "lrLechoDeSanta",
+                    "lrPalasex",
+                    "lrElFervor",
+                    "lrBiuTauOr",
+                    "lrBiuTauOcc",
+                    "lrArchipielago",
+                    "lrEnclaves",
+                    "lrOasis",
+                    "lrTimarAurhum"
+                ]
+            },
+            {
+                "id":"lrOasis",
+                "titulo":"El Oasis",
+                "coste":0,
+                "desc":"¡Mira, un buen sitio para vivir! Fundado por la Doctora Tiffanny y las supervivientes de las fábricas de Hall&Co, este es un auténtico remanso de paz para las no carbonoides tipo 3, lleno de fauna y flora dulce y abundante para asegurar su autonomía. ¡El sitio perfecto para unas vacaciones y para cagarte en los muertos de la gente que te ha esclavizado!",
+                "incompatibilidades":[
+                    "lrHegemonia",
+                    "lrLibertas",
+                    "lrLechoDeSanta",
+                    "lrPalasex",
+                    "lrElFervor",
+                    "lrBiuTauOr",
+                    "lrBiuTauOcc",
+                    "lrArchipielago",
+                    "lrEnclaves",
+                    "lrGranEmporio",
+                    "lrTimarAurhum"
+                ]
+            },
+            {
+                "id":"lrTimarAurhum",
+                "titulo":"Solemne y Áureo Reino de Timar Aurhum",
+                "coste":0,
+                "desc":"El país con mayor poder militar del oeste, fundado por el Gran Rey Aureliano tras la rebelión fallida en las cuevas occidentales influenciadas por el núcleo de la protección y el metal. Actualmente es una monarquía absolutista en la que poco puedes hacer si quieres algo de privacidad, ¡Pero eh, puedes ver arañas de cristal y dragones de metal gigantes con cuatro puños (Están guapísimos los Geidures, ¿A que sí?)!",
+                "incompatibilidades":[
+                    "lrHegemonia",
+                    "lrLibertas",
+                    "lrLechoDeSanta",
+                    "lrPalasex",
+                    "lrElFervor",
+                    "lrBiuTauOr",
+                    "lrBiuTauOcc",
+                    "lrArchipielago",
+                    "lrEnclaves",
+                    "lrGranEmporio",
+                    "lrOasis"
+                ]
+            }
+        ]
+        
     }
 ]
