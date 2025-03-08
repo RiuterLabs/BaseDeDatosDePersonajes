@@ -288,7 +288,7 @@
                 "id":"Espacio",
                 "titulo":"Espacio",
                 "coste":0,
-                "desc":"Así que quieres ser el señor de la noche, los secretos y la confianza, ¿Eh? Bueno, siempre puedes pedirle consejo al Don, afortunadamente. Controla las sombras, acapara los secretos más oscuros de la gente y aprovéchate de la confianza que tienes con ella siguiendo las enseñanzas del Confidente. ¡El núcleo perfecto para los informantes (O los taberneros)!",
+                "desc":"Ufff, este ha tenido controversias hace poco. El Núcleo del Espacio, la Continuidad y la Gestión en su momento fue portado por Daeda Run, la Tejedora, y recientemente por una abogada, Straw, de la que no vamos a hablar... Sus Llamadas de transporte, control espacial, y relatividad pueden ser muy útiles, pero asegúrate de darles un uso un poco mejor que la que le dio la última",
                 "requisitos":[
                     "Arcanos"
                 ]
@@ -298,7 +298,7 @@
                 "id":"Tiempo",
                 "titulo":"Tiempo",
                 "coste":0,
-                "desc":"¡Daemonios, conspiraciones y pactos! Ahh, el núcleo de las contradicciones y el poder político en general (A Cael'Ar'Mun se le llama Lord e instigador de rebeliones por algo). Arrímate a los gobernantes y cuando estén demasiado cómodos... ¡Apoya a los gobernados para desestabilizarlo todo! Con esto tendrás el destino de la sociedad y la política en la palma de tu mano (Ah, y también puedes invocar daemonios y espíritus, aunque el Don no lo haga. Mola, ¿No?)."
+                "desc":"Seguramente el Núcleo más peligroso, por su potencial y de quién viene la mayor parte de su poder, el Extraño. Gracias a la Madre (gracias también por el aumento, jefa), ha sido siempre portado por personas con al menos dos dedos de frente, como Zaio, el Archivador, y Santa Katarina, jefa actual de las Hermanas. Además, quien porte este Núcleo tiene la titánica tarea de mantener la consistencia del universo y la línea temporal. ¡Gracias, Kate!"
                 ,"requisitos":[
                     "Arcanos"
                 ]
@@ -308,7 +308,7 @@
                 "id":"Ritos",
                 "titulo":"Ritos",
                 "coste":0,
-                "desc":"Eww... ¿De verdad te gusta esto? A ver, sí, controlar las enfermedades es útil y los seguidores del Maestro Az son gente muy centrada y solidaria (A ver, lleva siendo así desde los tiempos de Praktheed, así que no me sorprende). Pero espero que comprendas que no me guste estar con gente que no solo se está pudriendo en vida, sino que también pudren y corroen todo su entorno... Y huelen fatal."
+                "desc":"¡Este es el mío! Ideal para gente, como yo, que sepa de programación. Ritos, Metodismo, y Estudio son los tres aspectos de este Núcleo, y con él, puedes programar en la misma realidad, permitiéndote hacer cualquier cosa desde una moneda que vibre si intentan entrar a tu casa hasta programar un edificio entero para que se adapte a las necesidades y deseos de quien haya dentro (aviso, no viene con conocimientos de interiorismo). Eso sí, apunta todo lo que hagas y funciona, no te estés pegando con un fallo durante semanas porque se te ha olvidado definir una variable"
                 ,"requisitos":[
                     "Arcanos"
                 ]
@@ -318,7 +318,7 @@
                 "id":"Evocación",
                 "titulo":"Evocación",
                 "coste":0,
-                "desc":"Mmmmm, el dulce consuelo de la muerte, tan dulce como las obras de Armonía, la Pastelera de Libertas. La garantía de que La Justa pondrá a todo el mundo en su lugar. A mí me parece un poco aburrido, pero si lo que quieres es ver y manipular almas y alzar a los muertos para que hagan las cosas por ti, siempre puedes seguir la senda de la nigromancia. (O eso o te dedicas a las leyes y la justicia, lo cual hace que sea más aburrido todavía) "
+                "desc":"Evocación, Máquinas y Leyes... Es una pena que uno tan útil esté en manos de Smith, y más después del uso ejemplar que le dio Maerul, que impulsó la tecnología enormemente en su momento. Puedes mirar una máquina y entender hasta su más mínima parte perfectamente, y recrearla casi con dos palos y un escupitajo, o puedes usar su parte más aburrida para manipular textos e imponer en parte tu voluntad a tu alrededos. De verdad, teniendo potencialmente ordenadores infinitos, ¿quién querría andar cambiando un par de palabras por ahí?"
                 ,"requisitos":[
                     "Arcanos"
                 ]
@@ -328,7 +328,7 @@
                 "id":"Interacción",
                 "titulo":"Interacción",
                 "coste":0,
-                "desc":"Sexo, el chiste es sexo. Nah, pese a lo que pueda parecer, este núcleo tiene mucho más que simplemente la Succión y los tentáculos. El núcleo de la belleza, la locura, la gravedad y la Nada, perfecto para la gente que quiera ser bailarina en un pub de mala muerte como Phradi. O también puedes ayudarnos un poco en la Congregación bajo la atenta mirada de Santa Alicia, lo que quieras... (Sí, también estoy contractualmente obligada a hacernos propaganda, así que ¿EH,TÚ? ¿TE GUSTA FOLLAR Y LOS TENTÁCULOS? PUES VEN AQUÍ)"
+                "desc":"Este es de mis favoritos, no sabes lo bien que me vendría tener uno o dos daemonios de este... Aunque, eso es algo que diría casi cualquier persona. Interacción se basa en, bueno, las interacciones, desde el punto de vista físico, químico, intraesencial... ¡Te permite combinar las cosas mucho más fácilmente! Y eso, combinado con su inventiva, el ser capaz de ver probabilidades, y ser capaz de dividir todo a sus componentes más básicos para después recombinarlos, lo hace seguramente el Núcleo más versátil junto con Adaptación"
                 ,"requisitos":[
                     "Arcanos"
                 ]
