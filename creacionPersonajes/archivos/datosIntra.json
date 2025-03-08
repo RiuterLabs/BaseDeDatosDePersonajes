@@ -102,5 +102,123 @@
             "Elementales"
         ]
         
+    },  {
+        "nombreCat":"Nucleos-Naturales",
+        "tituloCat":"Núcleos Naturales",
+        "tarjetas":[
+            {
+                "id":"Fauna",
+                "titulo":"Fauna",
+                "coste":0,
+                "desc":"Así que te gustan los animales, ¿Eh? Animales peludos, escamosos, babeantes, voladores... Pero más que nada, poderosos y vigorosos. ¡Abraza tu lado primitivo y salvaje y haz que te sigan! (No nos hacemos responsables de que te crezca pelo, escamas y cuernos y mucho menos de que vayas por ahí meándote por las esquinas. No seas como Ampithos, sé como Zoo'Mani)",
+                "requisitos":[
+                    "Naturales"
+                ]
+                
+            },
+            {
+                "id":"Flora",
+                "titulo":"Flora",
+                "coste":0,
+                "desc":"El núcleo de las plantas, el crecimiento, la longevidad y lo verde en general. Si morir de vieja es difícil de por sí, ¡Con esto podrás vivir miles de años! (Aunque si te descuidas acabarás echando raíces y nutriendo a todo el mundo como Treiv y sus Daer'Triae) ¡Espero que te gusten las hojas! Ah, y saluda al Gran Maestro de nuestra parte, ¿Quieres?"
+                ,"requisitos":[
+                    "Naturales"
+                ]
+                
+            },
+            {
+                "id":"Familiares",
+                "titulo":"Familiares",
+                "coste":0,
+                "desc":"Oye, tú. ¿Estás sólo? ¿Quieres algo que te haga compañía? ¿QUIERES FOLLARTE A TU PRI- (Mis abogadas no me permiten terminar este chiste por ser considerado de mal gusto en muchos países) ¡Pues este es tu núcleo! ¡Sigue las enseñanzas de Santos Zoo'Mani y genérate un amigo! (No nos preguntes por las implicaciones legales, morales o espirituales de jugar así con la vida, no quieres acabar en el exilio como los Diez Clanes)."
+                ,"requisitos":[
+                    "Naturales"
+                ]
+                
+            },
+            {
+                "id":"Comunion",
+                "titulo":"Comunión",
+                "coste":0,
+                "desc":"Una de dos, o te gusta ser el centro de atención de todas las situaciones en las que estás (Es decir, sigues a Adamarein) o eres una persona empática que comprende y quiere ayudar a todo el mundo (Es decir, no sigues ni a Adamarein ni a La Madre), no hay término medio. Seas lo que seas, si lo que quieres es conectarte con el mundo, sus habitantes y sus daemonios, ¡Estás en el sitio correcto!"
+                ,"requisitos":[
+                    "Naturales"
+                ]
+                
+            },
+            {
+                "id":"Adaptacion",
+                "titulo":"Adaptación",
+                "coste":0,
+                "desc":"No puedo describirte, bueno, ni a ti ni a este núcleo. ¿Por qué? Porque NUNCA DEJA DE CAMBIAR. No por nada es el núcleo más cercano a la Esencia de La Vida (Por algo lo llevaba La Madre, ¿No?). Contempla el entorno, recibe estímulos y cambia, transfórmate y EVOLUCIONA para adaptarte a todo. (Lo que no termino de entender es por qué las portadoras siempre han estado en el Espectro, pero eh, las preguntas a La Jefa y a La Subjefa Cam)."
+                ,"requisitos":[
+                    "Naturales"
+                ]
+                
+            }
+        ],
+        "requisitos":[
+            "Naturales"
+        ]
+        
+    },  {
+        "nombreCat":"Nucleos-Profanos",
+        "tituloCat":"Núcleos Profanos",
+        "tarjetas":[
+            {
+                "id":"Oscuridad",
+                "titulo":"Oscuridad",
+                "coste":0,
+                "desc":"¡Agua, fiesta, borrachera y felicidad! Probablemente de los núcleos a los que más les va la juerga, no llaman al anterior portador El Borracho por nada, ajaja. Eso sí, si vas a seguir a Sanabaur, más te vale llevarte un paraguas (Y una botella de vino)...",
+                "requisitos":[
+                    "Profanos"
+                ]
+                
+            },
+            {
+                "id":"Daemonios",
+                "titulo":"Daemonios",
+                "coste":0,
+                "desc":"El núcleo de la velocidad y la conquista (Créeme, esta gente es muy pesada con 'El arte de la conquista' de Von Wenfen). Técnicamente debería ser imparcial, pero El Don de los Enclaves me paga, así que... ¡Este núcleo te hará volar por ahí y podrás inflarte como si fueras un globo (Que sé que a mucha gente le va eso)! Desde luego, es un soplo de aire fresco, jeje."
+                ,"requisitos":[
+                    "Profanos"
+                ]
+                
+            },
+            {
+                "id":"Putrefaccion",
+                "titulo":"Putrefacción",
+                "coste":0,
+                "desc":"Oh no, tenemos a un intensito por aquí. Por favor, no dejes que tu ardiente pasión y fervor te quemen los ojos (Literalmente, ¿No sabes lo que le pasó a Al-Azsj?). Menos mal que Sanabaur y las fervorianas están ahí para templarte y controlarte. Eso sí, ¿Y lo de putísima madre quemarlo todo a tu paso?"
+                ,"requisitos":[
+                    "Profanos"
+                ]
+                
+            },
+            {
+                "id":"Muerte",
+                "titulo":"Muerte",
+                "coste":0,
+                "desc":"Rígida como una piedra, maleable como el barro (Y fértil como la tierra abonada, claro, que sabemos quién lleva esto). ¡El núcleo de Santa Megumi! ¡Crea terremotos con tus pies, lanza rocas por los aires y sé más terca que una puta mula (Por algo llamaban así a Atxomedarian, La Mula Sísmica)!"
+                ,"requisitos":[
+                    "Profanos"
+                ]
+                
+            },
+            {
+                "id":"Vacio",
+                "titulo":"Vacío",
+                "coste":0,
+                "desc":"Impredecible, caótica, estruendosa y guapísima, no se me ocurre mejor forma de describir tanto a Berbatho como a MADAMME CHISPAAAS (Estoy contractualmente obligada a llamarla así). Ya sabes cómo va esto, ¡El poder ilimitado del rayo y el trueno en la palma de tu mano! Por favor, intenta no freirle los cerebros a nadie, ¿Sabes el coñazo que es regenerarlos?"
+                ,"requisitos":[
+                    "Profanos"
+                ]
+                
+            }
+        ],
+        "requisitos":[
+            "Profanos"
+        ]
+        
     }
 ]
