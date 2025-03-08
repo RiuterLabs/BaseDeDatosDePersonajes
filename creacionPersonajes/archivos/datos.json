@@ -1437,173 +1437,144 @@
                 "id":"faccHegemonia",
                 "titulo":"Hegemonía de todos los Hombres",
                 "coste":0,
-                "desc":"Vale, de verdad, no sé qué coño haces usando esto. ¿Qué? ¿Tu amo Smith te ha soltado de la correa y te ha permitido meterte en la red de fuera del país? Bueno, si es así... Ya sabes lo que hay, un grupo de fanáticos extremistas que odian cualquier cosa que no sea humana. ¿Qué eres, un currito más bajo la opresión del Hegemón,"
+                "desc":"Vale, de verdad, no sé qué coño haces usando esto. ¿Qué? ¿Tu amo Smith te ha soltado de la correa y te ha permitido meterte en la red de fuera del país? Bueno, si es así... Ya sabes lo que hay, un grupo de fanáticos extremistas que odian cualquier cosa que no sea humana. ¿Qué eres, un currito más bajo la opresión del Hegemón, un inspector, UNA LUZ DE GAS...? O igual quieres cambiar las cosas desde dentro..."
                 ,"incompatibilidades":[
-                    "lrLibertas",
-                    "lrLechoDeSanta",
-                    "lrPalasex",
-                    "lrElFervor",
-                    "lrBiuTauOr",
-                    "lrBiuTauOcc",
-                    "lrArchipielago",
-                    "lrEnclaves",
-                    "lrGranEmporio",
-                    "lrOasis",
-                    "lrTimarAurhum"
-                ],"requisitos":[
-                    "Humano"
+                    "faccLaboratorios",
+                    "faccHermanas",
+                    "faccFervor",
+                    "faccAprendizas",
+                    "faccOasis",
+                    "faccHallYCo",
+                    "faccEnclaves",
+                    "faccTimarAurhum"
                 ]
             },
             {
                 "id":"faccLaboratorios",
                 "titulo":"Laboratorios Riuter",
                 "coste":0,
-                "desc":"El centro de toda la actividad del mundo, una ciudad cosmopolita que reune a gente de todos lados ya no del mundo, ¡Sino del universo! Es conocida por sus universidades, laboratorios destinados a la investigación de formas de vida maleables y por acoger a cualquier persona que quiera estar ahí por libre decisión. (Yo vivo y trabajo allí, por cierto, ¡Saludos desde Libertas!)",
+                "desc":"Sé que ya he dicho que no puedo ser imparcial, pero, joder, es que trabajo allí... Los Laboratorios Riuter son el centro más prestigioso (El único) de investigación de formas de vida maleables en todo Aelfatum. Presididos por la Doctora Yulva Maltarum (LA JEFA), el Doctor Anthony Gums (DON JEFE) y, últimamente, la Doctora Camelia Thomson. Pues eso, que es un sitio en el que trabajamos para descubrir los secretos de lo maleable. ¡Únete a nosotras, estira tus límites (El eslogan cursi también era obligatorio)!",
                 "incompatibilidades":[
-                    "lrHegemonia",
-                    "lrLechoDeSanta",
-                    "lrPalasex",
-                    "lrElFervor",
-                    "lrBiuTauOr",
-                    "lrBiuTauOcc",
-                    "lrArchipielago",
-                    "lrEnclaves",
-                    "lrGranEmporio",
-                    "lrOasis",
-                    "lrTimarAurhum"
+                    "faccHegemonia",
+                    "faccHermanas",
+                    "faccFervor",
+                    "faccAprendizas",
+                    "faccOasis",
+                    "faccHallYCo",
+                    "faccEnclaves",
+                    "faccTimarAurhum"
                 ]
             },
             {
                 "id":"faccHermanas",
                 "titulo":"Congregación de las Hermanas de Santa Megumi de La Vida y Su Elástica Faz",
                 "coste":0,
-                "desc":"(DISCLAIMER: LEGALMENTE NO PUEDO SER IMPARCIAL) Actual (Y única a lo largo de la historia) sede de la Congregación de las Hermanas de Santa Megumi. El Lecho es altamente conocido por lo peculiar de su fauna y flora basadas en tentáculos y serpientes, además de porque todos los edificios están conectados por barras, grietas y ganchos para que las plasmoides tipo 1 puedan saltar, balancearse y rebotar. ¡También es el centro médico en el que se reúnen las mayores eminencias en cualquier tipo de disciplina! (Y si quieres tener la noche de tu vida, créeme, este es tu sitio)",
+                "desc":"La otra facción de una servidora y la que literalmente me salvó la vida. Son un conjunto de pequeños conventos, cada uno presidido por una santa distinta, desde Katarina hasta Ophelia. Aún así, esta congregación centrada en el servicio a las demás, la medicina, la sanación y aumentar la población y el placer en el mundo, hoy en día está 'gobernada' por la Gran Santa Megumi de la Vida y gobernada por su madre, Santa Alicia del Vacío. Si quieres echar un buen polvo, ayudar a la gente y encima que te ayuden, ¡Este es tu sitio! ",
                 "incompatibilidades":[
-                    "lrHegemonia",
-                    "lrLibertas",
-                    "lrPalasex",
-                    "lrElFervor",
-                    "lrBiuTauOr",
-                    "lrBiuTauOcc",
-                    "lrArchipielago",
-                    "lrEnclaves",
-                    "lrGranEmporio",
-                    "lrOasis",
-                    "lrTimarAurhum"
+                    "faccHegemonia",
+                    "faccLaboratorios",
+                    "faccFervor",
+                    "faccAprendizas",
+                    "faccOasis",
+                    "faccHallYCo",
+                    "faccEnclaves",
+                    "faccTimarAurhum"
                 ]
             },
             {
                 "id":"faccFervor",
                 "titulo":"Elementalistas del Fervor",
                 "coste":0,
-                "desc":"A ver, técnicamente no es un país per se, pero sí que es una zona políticamente independiente... Bueno, este sitio es básicamente un mega parque de atracciones en el que LITERALMENTE te puedes encontrar de todo, desde cangrejoides de más allá de La Llama buscando nuevos vínculos hasta fanáticos de un tipo muy específico de terror de Edén de hace milenios, ¡Y todos ellos con su zona delimitada!",
-                "incompatibilidades":[
-                    "lrHegemonia",
-                    "lrLibertas",
-                    "lrLechoDeSanta",
-                    "lrElFervor",
-                    "lrBiuTauOr",
-                    "lrBiuTauOcc",
-                    "lrArchipielago",
-                    "lrEnclaves",
-                    "lrGranEmporio",
-                    "lrOasis",
-                    "lrTimarAurhum"
+                "desc":"¡Las mayores expertas en espiritismo y ciencia intrasencial del planeta! ¿Qué coño del planeta? DE LA GALAXIA. Hace mucho tiempo eran cinco países distintos, pero todos se acabaron uniendo en una única facción tras la Ascensión de Sanabaur. En resumen, mucha Intra, muchos elementos y mucho vino, ¡Todo ello bajo la atenta mirada de La Tejedestinos en persona (Atenta siempre que no esté como una puta cuba, claro)!",
+               "incompatibilidades":[
+                    "faccHegemonia",
+                    "faccLaboratorios",
+                    "faccHermanas",
+                    "faccAprendizas",
+                    "faccOasis",
+                    "faccHallYCo",
+                    "faccEnclaves",
+                    "faccTimarAurhum"
                 ]
             },
             {
                 "id":"faccAprendizas",
                 "titulo":"Aprendizas de Azxqerfo",
                 "coste":0,
-                "desc":"El país con la historia, cultura y todo en general, más longevo de este mundo (Coño y tanto, como que lleva 3000000 años existiendo, no te jode). Principalmente poblado por plasmoides tipo 3, por lo que mucha de la arquitectura está basada en tuberías, canales y ríos por los que alguien líquido puede simplemente fluir (Algún día tendría que probarlo...). Ah, y es la zona con más conocimiento arcano y espiritista del mundo. ¡Todo el mundo es un elementalista!",
+                "desc":"¿Te gustan las artes marciales, las enfermedades y los árboles? ¿Quieres aprender las bondades de meterte un clavo por el culo? ¿Te apetecería probar suerte con LA PIEDRA MÁGICA DEL CONTROL? ¡Pues pídele cita al Doctor Azxqerfo y deja que te entrene junto a eminencias de la lucha como Bea, Bea y... BEA! De aquí sale la gran mayoría del personal médico del sur del planeta, eso sí, te advierto que su definición de curar es... poco ortodoxa",
                 "incompatibilidades":[
-                    "lrHegemonia",
-                    "lrLibertas",
-                    "lrLechoDeSanta",
-                    "lrPalasex",
-                    "lrBiuTauOr",
-                    "lrBiuTauOcc",
-                    "lrArchipielago",
-                    "lrEnclaves",
-                    "lrGranEmporio",
-                    "lrOasis",
-                    "lrTimarAurhum"
+                    "faccHegemonia",
+                    "faccLaboratorios",
+                    "faccHermanas",
+                    "faccFervor",
+                    "faccOasis",
+                    "faccHallYCo",
+                    "faccEnclaves",
+                    "faccTimarAurhum"
                 ]
             },
             {
                 "id":"faccOasis",
                 "titulo":"Supervivientes del Oasis",
                 "coste":0,
-                "desc":"Una zona marcada por el conflicto con sus vecinos occidentales (En realidad sólo se han peleado un par de veces por un río medio congelado, así que...). Irrigado por el río BiuTau y cubierto de pantanos y junglas de plantas y seres gelatinosos, este es el sitio ideal para una plasmoide tipo 2. ¡Ten cuidado y no te estampes con los árboles!",
+                "desc":"Ufff, esta es dura, por lo que veo. Todas las personas de esta facción son esclavas fugadas de las fábricas de Hall que han podido fundar su propio país en el BiuTau Occidental. Es una facción basada en la cooperación, la libertad y el amor por una vida individual justa. Y parece que todo va perfectamente, bueno, todo lo bien que puede irle a un estado recién formado. Pero Tiff hace lo que puede (Por las gomosas tetas de La Madre, qué orgullosas estamos de ella).",
                 "incompatibilidades":[
-                    "lrHegemonia",
-                    "lrLibertas",
-                    "lrLechoDeSanta",
-                    "lrPalasex",
-                    "lrElFervor",
-                    "lrBiuTauOcc",
-                    "lrArchipielago",
-                    "lrEnclaves",
-                    "lrGranEmporio",
-                    "lrOasis",
-                    "lrTimarAurhum"
+                    "faccHegemonia",
+                    "faccLaboratorios",
+                    "faccHermanas",
+                    "faccFervor",
+                    "faccAprendizas",
+                    "faccHallYCo",
+                    "faccEnclaves",
+                    "faccTimarAurhum"
                 ]
             },
             {
                 "id":"faccHallYCo",
                 "titulo":"Hall &Co: Foods And Experiences",
                 "coste":0,
-                "desc":"Una zona marcada por el conflicto con sus vecinos orientales (Estos son los que suelen atacar más, por cierto, por eso el río está medio congelado...). Irrigado por el río BiuTau y cubierto por una frondosa selva congelada hasta arriba de nievorilas, ranárboles de chocolate y demás flora y fauna helada, por lo que es el asentamiento perfecto para las transmutadas y no carbonoides de materiales congelados (O si te gusta el helado, claro).",
+                "desc":"¿Seguís existiendo hoy en día? Pensaba que después de lo que le pasó a vuestra je... Ehem. Hall&Co, Hall&Co... La empresa que monopolizó la producción de cualquier producto que podría extraerse de una maleable... Mediante la esclavitud de personas a las que ordeñaba como si fueran básicamente bhures o frutas. Si te gusta el dinero, la esclavitud y la explotación (Además de reducir y torturar tanto a las personas que literalmente dejan de considerarse personas a sí mismas), esta es tú facción, supongo...",
                 "incompatibilidades":[
-                    "lrHegemonia",
-                    "lrLibertas",
-                    "lrLechoDeSanta",
-                    "lrPalasex",
-                    "lrElFervor",
-                    "lrBiuTauOr",
-                    "lrArchipielago",
-                    "lrEnclaves",
-                    "lrGranEmporio",
-                    "lrOasis",
-                    "lrTimarAurhum"
+                    "faccHegemonia",
+                    "faccLaboratorios",
+                    "faccHermanas",
+                    "faccFervor",
+                    "faccAprendizas",
+                    "faccOasis",
+                    "faccEnclaves",
+                    "faccTimarAurhum"
                 ]
             },
             {
                 "id":"faccEnclaves",
                 "titulo":"Enclaves Libres",
                 "coste":0,
-                "desc":"Curiosamente, no hay mucha gente que haya visitado este pequeño archipiélago gobernado por los Santos Zoo'Mani. Lo único que sabemos es que tienen una cultura basada en los 'deportes de contacto', lo que normalmente se reduce a una glorificación de la violencia en busca de la emoción de la confrontación... ¡Pero eh, su gente es majísima si no te dejas intimidar por sus formas medio animales!  ",
+                "desc":"La facción más hetereogénea y variada de todas. Dividida en capitanías que funcionan como una máquina perfectamente engrasada bajo la atenta mirada y apoyo del Don de los Enclaves. ¿Quieres cocinar? ¡Ve al distrito de la restauración! ¿Quieres producir químicos? ¡PhlecksChem te recibirá con los brazos abiertos! ¿Quieres un par de tragos? ¡El Bubble's siempre está abierto y Gums siempre estará ahí para ti! Eso sí, recuerda pagar tus impuestos y responder a los llamados de auxilio de la gente a tu alrededor, o podría ser que nadie responda a los tuyos.",
                 "incompatibilidades":[
-                    "lrHegemonia",
-                    "lrLibertas",
-                    "lrLechoDeSanta",
-                    "lrPalasex",
-                    "lrElFervor",
-                    "lrBiuTauOr",
-                    "lrBiuTauOcc",
-                    "lrEnclaves",
-                    "lrGranEmporio",
-                    "lrOasis",
-                    "lrTimarAurhum"
+                    "faccHegemonia",
+                    "faccLaboratorios",
+                    "faccHermanas",
+                    "faccFervor",
+                    "faccAprendizas",
+                    "faccOasis",
+                    "faccHallYCo",
+                    "faccTimarAurhum"
                 ]
             },
             {
                 "id":"faccTimarAurhum",
                 "titulo":"Ejército Dorado de Timar Aurhum",
                 "coste":0,
-                "desc":"Un conjunto de pequeños estados federales llamados distritos, cada uno de ellos dedicado a la manufactura y el comercio de un tipo de mercancía distinto. Este país gobernado por El Don de los Enclaves se fundó como un refugio para la gente que escapó de la Hegemonía durante la rebelión fallida y de las fábricas de Hall&Co. Se come de puta madre y se vive mejor, honestamente, ¡Por algo es la segunda zona más variada del mundo!",
+                "desc":"¡Honrada, fuerte, poderosa y profesional! Así es como se define a sí misma la gente de Timar Aurhum (Se suelen olvidar de la parte del palo metido por el culo, pero bueno). Este orgulloso pueblo de soldados, herreros y mineros está hoy en día dividido por un conflicto de sucesión. La gente tiene que decidir si apoyar al Rey Aureliano, fundador del país y gobernante absoluto expansionista del mismo, o a su hija, la Princesa Electra, que aboga por afrontar las relaciones exteriores con un enfoque más diplomático, por decirlo de alguna forma. ¿Qué eligirías tú?",
                 "incompatibilidades":[
-                    "lrHegemonia",
-                    "lrLibertas",
-                    "lrLechoDeSanta",
-                    "lrPalasex",
-                    "lrElFervor",
-                    "lrBiuTauOr",
-                    "lrBiuTauOcc",
-                    "lrArchipielago",
-                    "lrGranEmporio",
-                    "lrOasis",
-                    "lrTimarAurhum"
+                    "faccHegemonia",
+                    "faccLaboratorios",
+                    "faccHermanas",
+                    "faccFervor",
+                    "faccAprendizas",
+                    "faccOasis",
+                    "faccHallYCo",
+                    "faccEnclaves"
                 ]
             }
         ]
