@@ -102,6 +102,66 @@
             "Elementales"
         ]
         
+    },
+    {
+        "nombreCat":"Sagrada",
+        "tituloCat":"Sagrada",
+        "tarjetas":[
+            {
+                "id":"Luz",
+                "titulo":"Luz",
+                "coste":0,
+                "desc":"Núcleo de las mentiras y el arte. ¡Si eres artista, podrás hacer que tus obras resalten todo y más! Tan solo, cuidado no te dejes absorber, mira cómo ha estado la pobre Thienna. Al menos no estafa a gente como el viejo Fixel...",
+                "requisitos":[
+                    "Sagrados"
+                ]
+                
+            },
+            {
+                "id":"Creacion",
+                "titulo":"Creación",
+                "coste":0,
+                "desc":"Desde tiempos de Hana-Mesa-Hila, este Núcleo ha pasado de malas manos a malas manos. ¡Y normal, viendo que es el Núcleo de la censura (y templanza)! Menos mal que Hall desapareció bajo circunstancias misteriosas.",
+                "requisitos":[
+                    "Sagrados"
+                ]
+                
+            },
+            {
+                "id":"Canalizacion",
+                "titulo":"Canalización",
+                "coste":0,
+                "desc":"¿Qué vamos a decir del Núcleo del fanatismo y la manipulación? Vale que podrás hacer cosas espirituales y canalizar el poder de otras personas, ¿pero no podría haber ido el control mental a otros Núcleos? Mientras no te presentes como un enviado divino como Mirfael o Sacra...",
+                "requisitos":[
+                    "Sagrados"
+                ]
+                
+            },
+            {
+                "id":"Restauracion",
+                "titulo":"Restauración",
+                "coste":0,
+                "desc":"Es cierto que todo suele tender al equilibrio, y este Núcleo es la representación de esto. Vaera la Constante y Carmen ambas son defensoras de sus respectivos status quo, ¿y normal, viendo que pueden restaurar, purificar o negar cualquier cosa!",
+                "requisitos":[
+                    "Sagrados"
+                ]
+                
+            },
+            {
+                "id":"Proteccion",
+                "titulo":"Protección",
+                "coste":0,
+                "desc":"Un Núcleo muy tocado por la Esencia de, bueno, la Protección. Normal que suela elegir a protectores y monarcas, como Axtor Custis o el Gran Rey Aureliano. ¡Eso sí, menudas espadas puedes crear en un momento con la metalomancia, y corregir sus fallos con anulación!",
+                "requisitos":[
+                    "Sagrados"
+                ]
+                
+            }
+        ],
+        "requisitos":[
+            "Sagrados"
+        ]
+        
     },  {
         "nombreCat":"Nucleos-Naturales",
         "tituloCat":"Núcleos Naturales",
